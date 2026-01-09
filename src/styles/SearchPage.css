@@ -491,7 +491,7 @@ input[type="checkbox"] {
      TOP BAR
   ========================= */
   .top-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
 
     display: flex;
