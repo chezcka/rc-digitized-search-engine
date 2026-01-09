@@ -497,7 +497,7 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    align-items: stretch;
 
     padding-top: calc(env(safe-area-inset-top) + 10px);
     padding-bottom: 10px;
@@ -526,20 +526,20 @@ input[type="checkbox"] {
   }
 
   .top-search {
-    position: relative;
     width: 100%;
-
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
   }
 
   .hamburger-btn {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
+
+    margin-left: 2px; /* subtle nudge left */
 
     display: flex;
     align-items: center;
