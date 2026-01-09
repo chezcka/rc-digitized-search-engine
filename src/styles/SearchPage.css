@@ -496,8 +496,10 @@ input[type="checkbox"] {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch; /* 🔑 NOT center */
 
+    padding-left: max(6px, env(safe-area-inset-left));
+    padding-right: max(6px, env(safe-area-inset-right));
     padding-top: calc(env(safe-area-inset-top) + 10px);
     padding-bottom: 10px;
 
@@ -530,15 +532,15 @@ input[type="checkbox"] {
     align-items: center;
     gap: 8px;
 
-    padding-left: max(4px, env(safe-area-inset-left)); /* tighter */
-    padding-right: max(8px, env(safe-area-inset-right));
+    padding: 0; /* 🔑 remove inherited padding */
   }
 
   .hamburger-btn {
     width: 32px;
     height: 32px;
 
-    margin-right: auto; /* 🔑 THIS pushes it fully left */
+    margin: 0;            /* 🔑 remove auto spacing */
+    padding: 0;
 
     display: flex;
     align-items: center;
