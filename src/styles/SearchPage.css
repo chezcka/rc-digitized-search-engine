@@ -526,7 +526,9 @@ input[type="checkbox"] {
 
   .top-search input {
     flex: 1;
-    max-width: none;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .top-right {
