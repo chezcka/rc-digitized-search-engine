@@ -528,18 +528,13 @@ input[type="checkbox"] {
   .top-search {
     position: relative;
     width: 100%;
-    max-width: 420px;          /* 🔑 fixed mobile width */
-    margin: 0 auto;
 
     display: flex;
     align-items: center;
     gap: 10px;
 
-    padding: 8px 12px;
-    background: #ffffff;
-    border-radius: 16px;
-
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .hamburger-btn {
@@ -550,25 +545,22 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
 
-    background: #ffffff;
-    border-radius: 8px;
-
-    flex-shrink: 0;
+    background: transparent;
+    border-radius: 0;
   }
 
   .top-search input {
     flex: 1;
-    min-width: 0;              /* 🔑 Safari flex fix */
-    width: 100%;
+    min-width: 0;
 
-    height: 36px;
-    padding: 0 12px;
+    height: 40px;
+    padding: 0 14px;
 
-    border-radius: 18px;
+    border-radius: 20px;
     border: 1px solid #e5e7eb;
     background: #ffffff;
 
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .top-right {
