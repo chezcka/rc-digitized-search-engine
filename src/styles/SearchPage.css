@@ -573,41 +573,26 @@ input[type="checkbox"] {
   }
 
   /* =========================
-   STUDY MODAL ACTION BUTTONS (MOBILE)
+    RESEARCH CARD ACTION BUTTONS (MOBILE)
   ========================= */
-
-  /* Container alignment */
-  .study-modal .actions {
-    gap: 10px;
+  .actions {
+    gap: 12px;              /* tighter spacing */
   }
 
-  /* Base button size */
-  .study-modal .actions button {
-    min-width: 72px;
-    height: 34px;
+  .icon-action {
+    font-size: 12px;        /* 🔑 smaller text */
+    gap: 4px;
 
-    padding: 0 12px;
-
-    font-size: 13px;
-    font-weight: 500;
-
-    border-radius: 8px;
+    padding: 4px 6px;       /* compact tap area */
   }
 
-  /* Outline buttons (View / Save) */
-  .study-modal .actions button:not(.primary) {
-    border-width: 1px;
+  .icon-action svg {
+    width: 14px;            /* smaller icons */
+    height: 14px;
   }
 
-  /* Primary button (Cite) */
-  .study-modal .actions button.primary {
-    min-width: 76px;
-    font-size: 13px;
-  }
-
-  /* Optional: tighten text */
-  .study-modal .actions button span {
-    line-height: 1;
+  .cite-year {
+    font-size: 12px;
   }
 
   /* =========================
