@@ -497,7 +497,6 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: stretch;
 
     padding-top: calc(env(safe-area-inset-top) + 10px);
     padding-bottom: 10px;
