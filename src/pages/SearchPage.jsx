@@ -289,7 +289,7 @@ const totalPages = Math.ceil(
               />
             </svg>
 
-            <span>Bookmarked ({count})</span>
+            <span>Saved ({count})</span>
           </button>
 
           <div className="filter-section">
