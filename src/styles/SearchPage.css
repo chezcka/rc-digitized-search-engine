@@ -494,8 +494,11 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    padding: 14px 16px;
-    margin-top: 20px;
+    padding-top: calc(env(safe-area-inset-top) + 14px);
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
   }
 
   .top-left {
@@ -510,6 +513,7 @@ input[type="checkbox"] {
     align-items: center;
     padding: 0 4px;
     gap: 14px;
+    position: fixed;
   }
 
   .hamburger-btn {
