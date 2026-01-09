@@ -1,0 +1,139 @@
+/* =========================
+   REGISTER PAGE – CLEAN ACADEMIC
+========================= */
+.register-page {
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+
+  padding: 16px; /* mobile safe spacing */
+}
+
+/* Container */
+.register-card {
+  width: 420px;
+  max-width: 100%;        /* 🔑 prevent overflow */
+  text-align: center;
+}
+
+/* Logo */
+.register-card img {
+  width: 90px;
+  margin-bottom: 14px;
+}
+
+/* Title */
+.register-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+/* Subtitle */
+.register-subtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* Inputs */
+.register-card input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+
+  font-size: 14px;
+}
+
+.register-card input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Button */
+.register-card button {
+  width: 100%;
+  padding: 10px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.register-card button:hover {
+  background: #1e40af;
+}
+
+/* Error */
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+
+  padding: 8px;
+  font-size: 13px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+/* Link */
+.link {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+@media (max-width: 480px) {
+  .register-card img {
+    width: 72px;
+    margin-bottom: 12px;
+  }
+
+  .register-title {
+    font-size: 18px;
+  }
+
+  .register-subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .register-card input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .register-card button {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,40 @@
+.saved-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saved-modal {
+  width: 90%;
+  max-width: 900px;
+  max-height: 85vh;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  overflow-y: auto;
+  position: relative;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.saved-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.saved-modal-close:hover {
+  color: #0f172a;
+}

@@ -1,0 +1,20 @@
+/* ===============================
+   MAIN LAYOUT – FULL VIEWPORT
+=============================== */
+.main-layout {
+  width: 100vw;              /* FORCE full viewport width */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;          /* prevent horizontal scroll */
+}
+
+/* ===============================
+   PAGE CONTENT
+=============================== */
+.page-content {
+  flex: 1;
+  width: 100%;
+  min-width: 0;              /* CRITICAL for flex layouts */
+  overflow: hidden;
+}
