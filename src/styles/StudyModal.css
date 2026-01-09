@@ -82,3 +82,18 @@
   color: #ffffff;
   cursor: pointer;
 }
+
+@media (max-width: 900px) {
+  .modal-actions {
+    gap: 8px;                 /* tighter spacing */
+  }
+
+  .btn-outline,
+  .btn-primary {
+    padding: 6px 10px;        /* 🔑 smaller buttons */
+    font-size: 13px;          /* smaller text */
+    border-radius: 5px;
+    min-height: 32px;         /* still tap-friendly */
+  }
+}
+
