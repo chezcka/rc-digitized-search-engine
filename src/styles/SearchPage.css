@@ -247,7 +247,6 @@ input[type="checkbox"] {
   min-width: 0;            /* THIS IS CRITICAL */
   overflow-y: auto;
   padding: 24px 32px;
-  padding-top: 88px;
 }
 
 /* =========================
@@ -506,6 +505,7 @@ input[type="checkbox"] {
   .top-left {
     gap: 8px;
     width: 100%;
+    justify-content: center;
   }
 
   .top-search {
@@ -514,6 +514,7 @@ input[type="checkbox"] {
     align-items: center;
     padding: 0 4px;
     gap: 14px;
+    position: fixed;
   }
 
   .hamburger-btn {
@@ -534,6 +535,7 @@ input[type="checkbox"] {
 
   .results {
     padding-bottom: 120px;
+    padding-top: 88px;
   }
 
   /* =========================
