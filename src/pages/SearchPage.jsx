@@ -25,6 +25,7 @@ export default function SearchPage() {
   const [typeFilter, setTypeFilter] = useState([]);
   const [fieldFilter, setFieldFilter] = useState([]);
   const [otherField, setOtherField] = useState("");
+  const [strandFilter, setStrandFilter] = useState([]);
 
   const [yearFrom, setYearFrom] = useState("");
   const [yearTo, setYearTo] = useState("");
@@ -94,7 +95,7 @@ export default function SearchPage() {
   ========================= */
   useEffect(() => {
     setCurrentPage(1);
-  }, [search, typeFilter, fieldFilter, yearFrom, yearTo, otherField]);
+  }, [search, typeFilter, fieldFilter, yearFrom, yearTo, otherField, strandFilter]);
 
   const toggleFilter = (value, state, setState) => {
     setState(
@@ -132,7 +133,11 @@ export default function SearchPage() {
       (!yearFrom || study.year >= yearFrom) &&
       (!yearTo || study.year <= yearTo);
 
-    return matchesSearch && matchesType && matchesField && matchesYear;
+    const matchesStrand =
+      strandFilter.length === 0 ||
+      strandFilter.includes(study.strand);
+
+    return matchesSearch && matchesType && matchesField && matchesYear && matchesStrand;
   });
 
 const totalPages = Math.ceil(
@@ -182,7 +187,8 @@ const totalPages = Math.ceil(
     fieldFilter,
     yearFrom,
     yearTo,
-    otherField
+    otherField,
+    strandFilter
   });
 
 
@@ -335,6 +341,10 @@ const totalPages = Math.ceil(
               "Technology",
               "Engineering",
               "Medical",
+              "Business",
+              "Accounting",
+              "Management",
+              "Economics",
               "Others"
             ].map((field) => (
               <label key={field}>
@@ -366,6 +376,20 @@ const totalPages = Math.ceil(
                 }}
               />
             )}
+
+            <h4>Strand</h4>
+              {["ABM", "HUMMS", "STEM"].map((strand) => (
+                <label key={strand}>
+                  <input
+                    type="checkbox"
+                    checked={strandFilter.includes(strand)}
+                    onChange={() =>
+                      toggleFilter(strand, strandFilter, setStrandFilter)
+                    }
+                  />
+                  {strand}
+                </label>
+              ))}
           </div>
 
           <button className="logout-btn mobile-logout" onClick={handleLogout}>
@@ -421,6 +445,10 @@ const totalPages = Math.ceil(
               "Technology",
               "Engineering",
               "Medical",
+              "Business",
+              "Accounting",
+              "Management",
+              "Economics",
               "Others"
             ].map((field) => (
               <label key={field}>
@@ -450,6 +478,20 @@ const totalPages = Math.ceil(
                 }}
               />
             )}
+
+            <h4>Strand</h4>
+              {["ABM", "HUMMS", "STEM"].map((strand) => (
+                <label key={strand}>
+                  <input
+                    type="checkbox"
+                    checked={strandFilter.includes(strand)}
+                    onChange={() =>
+                      toggleFilter(strand, strandFilter, setStrandFilter)
+                    }
+                  />
+                  {strand}
+                </label>
+              ))}
           </div>
 
           <div style={{ marginTop: "auto", paddingTop: "16px" }}>

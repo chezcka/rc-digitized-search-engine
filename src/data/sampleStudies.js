@@ -11,6 +11,7 @@ const sampleStudies = [
   year: 2020,
   type: "Qualitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This study explores teachers’ experiences during emergency remote teaching.",
   abstractFull:
@@ -26,6 +27,7 @@ const sampleStudies = [
   year: 2018,
   type: "Qualitative",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This study examines patient perceptions of telemedicine.",
   abstractFull:
@@ -41,6 +43,7 @@ const sampleStudies = [
   year: 2002,
   type: "Qualitative",
   field: "Mathematics",
+  strand: "STEM",
   abstractShort:
     "This study examines the cognitive effects of mathematics anxiety.",
   abstractFull:
@@ -56,6 +59,7 @@ const sampleStudies = [
   year: 2015,
   type: "Qualitative",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This study investigates household acceptance of smart home technologies.",
   abstractFull:
@@ -71,6 +75,7 @@ const sampleStudies = [
   year: 2004,
   type: "Qualitative",
   field: "Engineering",
+  strand: "STEM",
   abstractShort:
     "This study reviews learning outcomes in project-based learning.",
   abstractFull:
@@ -86,6 +91,7 @@ const sampleStudies = [
   year: 2010,
   type: "Quantitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This meta-analysis evaluates online learning effectiveness.",
   abstractFull:
@@ -101,6 +107,7 @@ const sampleStudies = [
   year: 2006,
   type: "Quantitative",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This study examines air pollution exposure and health outcomes.",
   abstractFull:
@@ -116,6 +123,7 @@ const sampleStudies = [
   year: 2013,
   type: "Quantitative",
   field: "Mathematics",
+  strand: "STEM",
   abstractShort:
     "This meta-analysis identifies factors influencing math achievement.",
   abstractFull:
@@ -131,6 +139,7 @@ const sampleStudies = [
   year: 2006,
   type: "Quantitative",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This study compares machine learning algorithms for spam detection.",
   abstractFull:
@@ -146,6 +155,7 @@ const sampleStudies = [
   year: 2011,
   type: "Quantitative",
   field: "Engineering",
+  strand: "STEM",
   abstractShort:
     "This study analyzes reinforced concrete beam behavior.",
   abstractFull:
@@ -163,6 +173,7 @@ const sampleStudies = [
   year: 2008,
   type: "Qualitative",
   field: "English",
+  strand: "HUMMS",
   abstractShort:
     "This study examines digital storytelling in language education.",
   abstractFull:
@@ -178,6 +189,7 @@ const sampleStudies = [
   year: 2007,
   type: "Quantitative",
   field: "English",
+  strand: "HUMMS",
   abstractShort:
     "This study examines reading motivation among ESL learners.",
   abstractFull:
@@ -195,6 +207,7 @@ const sampleStudies = [
   year: 2012,
   type: "Quantitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This study evaluates simulation-based science learning.",
   abstractFull:
@@ -210,6 +223,7 @@ const sampleStudies = [
   year: 2019,
   type: "Qualitative",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This study explores user engagement with mobile health apps.",
   abstractFull:
@@ -225,6 +239,7 @@ const sampleStudies = [
   year: 2015,
   type: "Quantitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This study identifies predictors of success in online learning.",
   abstractFull:
@@ -242,6 +257,7 @@ const sampleStudies = [
   year: 2013,
   type: "Quantitative",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This study examines the role of learning analytics.",
   abstractFull:
@@ -257,6 +273,7 @@ const sampleStudies = [
   year: 2017,
   type: "Quantitative",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This study examines workload and stress among nurses.",
   abstractFull:
@@ -272,6 +289,7 @@ const sampleStudies = [
   year: 2012,
   type: "Quantitative",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This meta-analysis examines the Technology Acceptance Model.",
   abstractFull:
@@ -287,6 +305,7 @@ const sampleStudies = [
   year: 2018,
   type: "Qualitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This study explores teacher perspectives on inquiry-based teaching.",
   abstractFull:
@@ -302,6 +321,7 @@ const sampleStudies = [
   year: 2020,
   type: "Quantitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This study examines motivation in self-paced learning.",
   abstractFull:
@@ -316,6 +336,7 @@ const sampleStudies = [
   year: 2018,
   type: "Qualitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This study explores student experiences using virtual laboratories.",
   abstractFull:
@@ -331,6 +352,7 @@ const sampleStudies = [
   year: 2017,
   type: "Quantitative",
   field: "Engineering",
+  strand: "STEM",
   abstractShort:
     "This study analyzes heat transfer using numerical simulation.",
   abstractFull:
@@ -346,6 +368,7 @@ const sampleStudies = [
   year: 2010,
   type: "Qualitative",
   field: "Mathematics",
+  strand: "STEM",
   abstractShort:
     "This study examines teachers’ beliefs about technology integration.",
   abstractFull:
@@ -361,6 +384,7 @@ const sampleStudies = [
   year: 2007,
   type: "Quantitative",
   field: "English",
+  strand: "HUMMS",
   abstractShort:
     "This study examines reading attitudes among ESL learners.",
   abstractFull:
@@ -376,6 +400,7 @@ const sampleStudies = [
   year: 2015,
   type: "Qualitative",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This study explores user experience factors in mobile health apps.",
   abstractFull:
@@ -391,6 +416,7 @@ const sampleStudies = [
   year: 2006,
   type: "Qualitative",
   field: "Engineering",
+  strand: "STEM",
   abstractShort:
     "This study explores engineering students’ experiences with remote labs.",
   abstractFull:
@@ -406,6 +432,7 @@ const sampleStudies = [
   year: 2010,
   type: "Quantitative",
   field: "Mathematics",
+  strand: "STEM",
   abstractShort:
     "This study examines the relationship between study habits and performance.",
   abstractFull:
@@ -421,6 +448,7 @@ const sampleStudies = [
   year: 2006,
   type: "Quantitative",
   field: "English",
+  strand: "HUMMS",
   abstractShort:
     "This study examines factors affecting English proficiency.",
   abstractFull:
@@ -436,6 +464,7 @@ const sampleStudies = [
   year: 2012,
   type: "Quantitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This study evaluates simulation-based learning effectiveness.",
   abstractFull:
@@ -451,6 +480,7 @@ const sampleStudies = [
   year: 2009,
   type: "Quantitative",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This study examines LMS acceptance among students.",
   abstractFull:
@@ -466,6 +496,7 @@ const sampleStudies = [
   year: 2016,
   type: "Quantitative",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This study examines workload and stress among nurses.",
   abstractFull:
@@ -481,6 +512,7 @@ const sampleStudies = [
   year: 2012,
   type: "Quantitative",
   field: "English",
+  strand: "HUMMS",
   abstractShort:
     "This study evaluates digital storytelling in ESL writing.",
   abstractFull:
@@ -496,6 +528,7 @@ const sampleStudies = [
   year: 2012,
   type: "Quantitative",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This study examines learning analytics for student success.",
   abstractFull:
@@ -511,6 +544,7 @@ const sampleStudies = [
   year: 2010,
   type: "Quantitative",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This study examines inquiry-based instruction in science.",
   abstractFull:
@@ -526,6 +560,7 @@ const sampleStudies = [
   year: 2013,
   type: "Qualitative",
   field: "Engineering",
+  strand: "STEM",
   abstractShort:
     "This study reviews remote laboratories in engineering education.",
   abstractFull:
@@ -541,6 +576,7 @@ const sampleStudies = [
   year: 2003,
   type: "Quantitative",
   field: "Mathematics",
+  strand: "STEM",
   abstractShort:
     "This study examines motivation in mathematics learning.",
   abstractFull:
@@ -556,6 +592,7 @@ const sampleStudies = [
   year: 2012,
   type: "Qualitative",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This study explores mobile learning adoption.",
   abstractFull:
@@ -571,6 +608,7 @@ const sampleStudies = [
   year: 2009,
   type: "Qualitative",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This study explores clinical decision-making among nurses.",
   abstractFull:
@@ -586,6 +624,7 @@ const sampleStudies = [
   year: 2007,
   type: "Qualitative",
   field: "Mathematics",
+  strand: "STEM",
   abstractShort:
     "This study examines student experiences with mathematical proof.",
   abstractFull:
@@ -601,6 +640,7 @@ const sampleStudies = [
   year: 2014,
   type: "Quantitative",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This study examines satisfaction with mobile health apps.",
   abstractFull:
@@ -615,6 +655,7 @@ const sampleStudies = [
   year: 2024,
   type: "Capstone",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This capstone project develops a web-based research catalog system.",
   abstractFull:
@@ -629,6 +670,7 @@ const sampleStudies = [
   year: 2023,
   type: "Capstone",
   field: "Engineering",
+  strand: "STEM",
   abstractShort:
     "This project develops an IoT-based smart irrigation system.",
   abstractFull:
@@ -643,6 +685,7 @@ const sampleStudies = [
   year: 2022,
   type: "Capstone",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This project develops a mobile application for patient monitoring.",
   abstractFull:
@@ -657,6 +700,7 @@ const sampleStudies = [
   year: 2023,
   type: "Capstone",
   field: "Science",
+  strand: "STEM",
   abstractShort:
     "This project applies predictive analytics to academic performance.",
   abstractFull:
@@ -671,6 +715,7 @@ const sampleStudies = [
   year: 2024,
   type: "Capstone",
   field: "Mathematics",
+  strand: "STEM",
   abstractShort:
     "This project develops an interactive mathematics learning platform.",
   abstractFull:
@@ -685,6 +730,7 @@ const sampleStudies = [
   year: 2024,
   type: "Capstone",
   field: "English",
+  strand: "HUMMS",
   abstractShort:
     "This project develops an English vocabulary learning chatbot.",
   abstractFull:
@@ -699,6 +745,7 @@ const sampleStudies = [
   year: 2023,
   type: "Capstone",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This project develops an automated attendance system.",
   abstractFull:
@@ -713,6 +760,7 @@ const sampleStudies = [
   year: 2023,
   type: "Capstone",
   field: "Engineering",
+  strand: "STEM",
   abstractShort:
     "This project develops a smart energy monitoring system.",
   abstractFull:
@@ -727,6 +775,7 @@ const sampleStudies = [
   year: 2023,
   type: "Capstone",
   field: "Medical",
+  strand: "STEM",
   abstractShort:
     "This project develops a hospital queue management dashboard.",
   abstractFull:
@@ -741,11 +790,162 @@ const sampleStudies = [
   year: 2024,
   type: "Capstone",
   field: "Technology",
+  strand: "STEM",
   abstractShort:
     "This project develops an online thesis repository.",
   abstractFull:
     "This capstone project develops a centralized online repository for storing, managing, and searching undergraduate and graduate theses, supporting academic research management.",
   pdf: null
+},
+{
+  id: 51,
+  title: "Financial Literacy and Its Impact on Small Business Sustainability",
+  authors: "A. Lusardi, O. S. Mitchell",
+  year: 2014,
+  type: "Quantitative",
+  field: "Business",
+  strand: "ABM",
+  abstractShort:
+    "This study examines how financial literacy affects small business sustainability.",
+  abstractFull:
+    "This quantitative study examines the relationship between financial literacy and the long-term sustainability of small businesses. Findings indicate that entrepreneurs with higher financial literacy demonstrate stronger budgeting, investment planning, and risk management practices, leading to improved business survival rates.",
+  pdf: "https://files.eric.ed.gov/fulltext/EJ1024891.pdf",
+  link: "https://eric.ed.gov/?id=EJ1024891"
+},
+{
+  id: 52,
+  title: "The Relationship Between Accounting Information Systems and Organizational Performance",
+  authors: "H. Grande, R. Estébanez",
+  year: 2011,
+  type: "Quantitative",
+  field: "Accounting",
+  strand: "ABM",
+  abstractShort:
+    "This study investigates accounting information systems and firm performance.",
+  abstractFull:
+    "This quantitative study investigates how accounting information systems influence organizational performance. Results show that effective implementation of accounting systems enhances decision-making efficiency, financial reporting accuracy, and competitive advantage.",
+  pdf: "https://core.ac.uk/download/pdf/301356812.pdf",
+  link: "https://core.ac.uk/works/301356812"
+},
+{
+  id: 53,
+  title: "Entrepreneurial Intentions Among Senior High School Students",
+  authors: "F. Liñán, Y. Chen",
+  year: 2009,
+  type: "Quantitative",
+  field: "Business",
+  strand: "ABM",
+  abstractShort:
+    "This study explores entrepreneurial intentions among students.",
+  abstractFull:
+    "This quantitative study examines factors influencing entrepreneurial intentions among senior high school students. Findings highlight the role of perceived behavioral control, attitude toward entrepreneurship, and subjective norms in shaping students’ intentions to start businesses.",
+  pdf: "https://core.ac.uk/download/pdf/82093321.pdf",
+  link: "https://core.ac.uk/works/82093321"
+},
+{
+  id: 54,
+  title: "Strategic Management Practices and Business Growth in SMEs",
+  authors: "J. A. Pearce, R. B. Robinson",
+  year: 2013,
+  type: "Qualitative",
+  field: "Management",
+  strand: "ABM",
+  abstractShort:
+    "This study examines strategic management practices in SMEs.",
+  abstractFull:
+    "This qualitative study explores strategic management practices among small and medium enterprises (SMEs). Findings indicate that structured planning, competitive analysis, and leadership alignment significantly contribute to sustainable business growth.",
+  pdf: "https://core.ac.uk/download/pdf/234675432.pdf",
+  link: "https://core.ac.uk/works/234675432"
+},
+{
+  id: 55,
+  title: "Consumer Behavior and Online Purchasing Decisions",
+  authors: "M. N. Hajli",
+  year: 2015,
+  type: "Quantitative",
+  field: "Business",
+  strand: "ABM",
+  abstractShort:
+    "This study examines consumer behavior in online purchasing.",
+  abstractFull:
+    "This quantitative study examines factors influencing consumer behavior in online purchasing environments. Results highlight the impact of trust, perceived value, social influence, and digital marketing strategies on purchasing decisions.",
+  pdf: "https://core.ac.uk/download/pdf/301370876.pdf",
+  link: "https://core.ac.uk/works/301370876"
+},
+{
+  id: 56,
+  title: "Corporate Governance and Firm Performance: Evidence from Emerging Markets",
+  authors: "A. Klapper, I. Love",
+  year: 2004,
+  type: "Quantitative",
+  field: "Management",
+  strand: "ABM",
+  abstractShort:
+    "This study examines corporate governance and firm performance.",
+  abstractFull:
+    "This quantitative study investigates the relationship between corporate governance practices and firm performance in emerging markets. Results indicate that firms with stronger governance mechanisms demonstrate higher profitability, improved investor confidence, and better market valuation.",
+  pdf: "https://core.ac.uk/download/pdf/6994836.pdf",
+  link: "https://core.ac.uk/works/6994836"
+},
+{
+  id: 57,
+  title: "Financial Management Practices and Profitability of Small Enterprises",
+  authors: "E. M. Maseko, O. Manyani",
+  year: 2011,
+  type: "Quantitative",
+  field: "Accounting",
+  strand: "ABM",
+  abstractShort:
+    "This study explores financial management practices in SMEs.",
+  abstractFull:
+    "This quantitative study examines how financial management practices affect profitability among small enterprises. Findings reveal that effective budgeting, financial reporting, and internal control systems are positively associated with improved business profitability.",
+  pdf: "https://core.ac.uk/download/pdf/234643557.pdf",
+  link: "https://core.ac.uk/works/234643557"
+},
+{
+  id: 58,
+  title: "Digital Marketing Strategies and Consumer Engagement",
+  authors: "D. Chaffey, F. Ellis-Chadwick",
+  year: 2019,
+  type: "Qualitative",
+  field: "Business",
+  strand: "ABM",
+  abstractShort:
+    "This study examines digital marketing strategies and engagement.",
+  abstractFull:
+    "This qualitative study explores how digital marketing strategies influence consumer engagement and brand loyalty. Findings emphasize the importance of social media presence, targeted advertising, and data-driven marketing in enhancing customer interaction and retention.",
+  pdf: "https://core.ac.uk/download/pdf/301357401.pdf",
+  link: "https://core.ac.uk/works/301357401"
+},
+{
+  id: 59,
+  title: "Economic Factors Influencing Entrepreneurial Growth",
+  authors: "W. Naudé",
+  year: 2010,
+  type: "Quantitative",
+  field: "Economics",
+  strand: "ABM",
+  abstractShort:
+    "This study analyzes economic factors affecting entrepreneurship.",
+  abstractFull:
+    "This quantitative study analyzes macroeconomic and institutional factors influencing entrepreneurial growth. Results indicate that access to finance, regulatory environment, and human capital development significantly impact new venture success rates.",
+  pdf: "https://core.ac.uk/download/pdf/6347195.pdf",
+  link: "https://core.ac.uk/works/6347195"
+},
+{
+  id: 60,
+  title: "The Impact of Budgeting Practices on Organizational Performance",
+  authors: "M. Uyar, F. Bilgin",
+  year: 2011,
+  type: "Quantitative",
+  field: "Accounting",
+  strand: "ABM",
+  abstractShort:
+    "This study examines budgeting practices and performance outcomes.",
+  abstractFull:
+    "This quantitative study examines the impact of formal budgeting practices on organizational performance. Findings show that systematic budgeting processes enhance financial control, strategic alignment, and operational efficiency.",
+  pdf: "https://core.ac.uk/download/pdf/301370845.pdf",
+  link: "https://core.ac.uk/works/301370845"
 }
 
 ];
