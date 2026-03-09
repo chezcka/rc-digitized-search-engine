@@ -221,7 +221,7 @@ const totalPages = Math.ceil(
         {/* LOGO */}
         <div className="top-left">
           <img src={logo} alt="RC Logo" />
-          <span>RC Digitized Research Catalog</span>
+          <span>RCGATE</span>
         </div>
 
         {/* SEARCH (DESKTOP CENTER / MOBILE ROW) */}
@@ -357,9 +357,6 @@ const totalPages = Math.ceil(
           <div className="filter-section">
             <h4>Field</h4>
             {[
-              "Science",
-              "Mathematics",
-              "English",
               "Technology",
               "Engineering",
               "Medicine",
@@ -460,10 +457,7 @@ const totalPages = Math.ceil(
 
           <div className="filter-section">
             <h4>Field</h4>
-            {[
-              "Science",
-              "Mathematics",
-              "English",
+            {[,
               "Technology",
               "Engineering",
               "Medicine",
