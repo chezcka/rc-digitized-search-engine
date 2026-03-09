@@ -97,6 +97,24 @@
   text-decoration: underline;
 }
 
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  width: 100%;
+}
+
+.show-password {
+  position: absolute;
+  right: 12px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #666;
+}
+
 /* =========================
    MOBILE OPTIMIZATION
 ========================= */

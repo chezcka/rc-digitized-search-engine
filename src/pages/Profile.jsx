@@ -100,6 +100,12 @@ export default function Profile({ open, onClose }) {
               )}
             </div>
 
+            {/* USERNAME */}
+            <div className="profile-row">
+              <span>Username</span>
+              <strong>{profile.username || "—"}</strong>
+            </div>
+
             {/* EMAIL (READ ONLY) */}
             <div className="profile-row">
               <span>Email</span>

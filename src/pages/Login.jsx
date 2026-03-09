@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase/firebaseConfig";
+import { ref, get, child } from "firebase/database";
+import { auth, database } from "../firebase/firebaseConfig";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/rc-logo.png";
 import "../styles/Login.css";
 
 export default function Login() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
+
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
 
   const handleLogin = async (e) => {
@@ -16,10 +19,33 @@ export default function Login() {
     setError("");
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const dbRef = ref(database);
+      const snapshot = await get(child(dbRef, "users"));
+
+      if (!snapshot.exists()) {
+        setError("User not found");
+        return;
+      }
+
+      let emailFound = null;
+
+      for (const childSnapshot of Object.values(snapshot.val())) {
+        if (childSnapshot.username === username.trim().toLowerCase()) {
+          emailFound = childSnapshot.email;
+          break;
+        }
+      }
+
+      if (!emailFound) {
+        setError("Invalid username or password");
+        return;
+      }
+
+      await signInWithEmailAndPassword(auth, emailFound, password);
+
       navigate("/search");
-    } catch {
-      setError("Invalid email or password");
+    } catch (err) {
+      setError("Invalid username or password");
     }
   };
 
@@ -33,21 +59,32 @@ export default function Login() {
         {error && <div className="error">{error}</div>}
 
         <form onSubmit={handleLogin}>
+
           <input
-            type="email"
+            type="text"
             placeholder="Username"
             required
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
           />
 
-          <input
-            type="password"
-            placeholder="Password"
-            required
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          <div className="password-field">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              required
+              onChange={(e) => setPassword(e.target.value)}
+            />
+
+            <span
+              className="show-password"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? "Hide" : "Show"}
+            </span>
+          </div>
 
           <button type="submit">Login</button>
+
         </form>
 
         <p className="link" onClick={() => navigate("/register")}>

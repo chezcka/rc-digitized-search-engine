@@ -8,12 +8,16 @@ import "../styles/Register.css";
 
 export default function Register() {
   const navigate = useNavigate();
+
   const [form, setForm] = useState({
     fullName: "",
+    username: "",
     email: "",
     password: ""
   });
+
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -24,6 +28,8 @@ export default function Register() {
     setError("");
 
     try {
+      const normalizedUsername = form.username.trim().toLowerCase();
+
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         form.email,
@@ -32,11 +38,13 @@ export default function Register() {
 
       await set(ref(database, `users/${userCredential.user.uid}`), {
         fullName: form.fullName,
+        username: normalizedUsername,
         email: form.email,
         createdAt: new Date().toISOString()
       });
 
       navigate("/login");
+
     } catch (err) {
       setError(err.message);
     }
@@ -52,10 +60,19 @@ export default function Register() {
         {error && <div className="error">{error}</div>}
 
         <form onSubmit={handleRegister}>
+
           <input
             type="text"
             name="fullName"
             placeholder="Full Name"
+            required
+            onChange={handleChange}
+          />
+
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
             required
             onChange={handleChange}
           />
@@ -68,15 +85,25 @@ export default function Register() {
             onChange={handleChange}
           />
 
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            onChange={handleChange}
-          />
+          <div className="password-field">
+            <input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder="Password"
+              required
+              onChange={handleChange}
+            />
+
+            <span
+              className="show-password"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? "Hide" : "Show"}
+            </span>
+          </div>
 
           <button type="submit">Register</button>
+
         </form>
 
         <p className="link" onClick={() => navigate("/login")}>
