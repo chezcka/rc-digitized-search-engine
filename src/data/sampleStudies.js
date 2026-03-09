@@ -1,953 +1,332 @@
 const sampleStudies = [
 
 /* =====================================================
-   REAL OPEN-ACCESS STUDIES (1–20)
+QUALITATIVE STUDIES
 ===================================================== */
 
 {
-  id: 1,
-  title: "Teachers’ Experiences in Emergency Remote Teaching During COVID-19",
-  authors: "T. Trust, J. Whalen",
-  year: 2020,
-  type: "Qualitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This study explores teachers’ experiences during emergency remote teaching.",
-  abstractFull:
-    "This qualitative study examines how teachers adapted instructional practices during emergency remote teaching caused by the COVID-19 pandemic. Teachers reported challenges related to technology access, student engagement, assessment, and workload, while emphasizing the importance of flexibility and professional collaboration.",
-  pdf: "https://eurodljournal.com/articles/144/files/6808e4b1503be.pdf",
-  link: "https://eurodljournal.com/article/view/144"
+id: 1,
+category: "Qualitative",
+title: "User Experiences with the Effectiveness and Accessibility of Smartwatches",
+authors: "Raymond Angelo D. Arcenas, Eihra Felice P. Borja, Julienne Famela A. De Guzman, Luzviminda C. Dimapilis, Danica P. Ordoña",
+gradeLevel: "11",
+strand: "STEM",
+year: 2025,
+apaCitation:
+"Arcenas, R. A. D., Borja, E. F. P., De Guzman, J. F. A., Dimapilis, L. C., & Ordoña, D. P. (2025). User experiences with the effectiveness and accessibility of smartwatches. RC-JHS Library.",
+field: "Technology / Health Informatics",
+controlNumber: "TSHS 0013",
+location: "RC-JHS Library",
+abstract:
+"This research explored the experiences of smartwatch users in Tagaytay, Cavite, on the efficacy, accessibility, and overall functionality of the devices. Through qualitative approaches, data were collected through interviews and analyzed via thematic analysis. Results indicated several positive outcomes of smartwatch usage, such as user-friendliness, accessibility, tracking of health and fitness, and convenient features that facilitate daily functioning. However, the study also uncovered challenges, such as inconsistent accuracy, limited battery life, and connectivity issues.",
+keywords: ["Smartwatch","Experience","Users","Usefulness","Effectiveness"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 2,
-  title: "Patient Perceptions of Telemedicine in Primary Care",
-  authors: "C. S. Kruse, K. Krowski, B. Rodriguez",
-  year: 2018,
-  type: "Qualitative",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This study examines patient perceptions of telemedicine.",
-  abstractFull:
-    "This qualitative systematic review examines patient perceptions of telemedicine in primary care. Findings indicate high satisfaction due to convenience and access, alongside concerns related to privacy, technical issues, and continuity of care.",
-  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139754/pdf/jmir-20-e1.pdf",
-  link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6139754/"
+id: 2,
+category: "Qualitative",
+title: "From Passion to Profession: The Experiences of Working in the Hospitality Field",
+authors: "Ashly Nicole C. Amon, Flower Rose D. Herrera, Andrei Cedrick Mayuga, Threeztah Khalil M. Protacio, Daphney B. Sagun",
+gradeLevel: "11",
+strand: "HUMSS",
+year: 2025,
+apaCitation:
+"Amon, A. N. C., Herrera, F. R. D., Mayuga, A. C., Protacio, T. K. M., & Sagun, D. B. (2025). From passion to profession: The experiences of working in the hospitality field. RC-JHS Library.",
+field: "Social / Hospitality Management",
+controlNumber: "TSHS 0003",
+location: "RC-JHS Library",
+abstract:
+"This study explores the experiences of five (5) hospitality workers from Metro Manila who have turned their passion for the industry into long-term careers. Using a basic interpretive qualitative approach, the researchers conducted in-depth interviews to examine the emotional, social, and professional dimensions of their work. The study looks into how these individuals manage the everyday realities of the industry—such as demanding schedules, emotional labor, and maintaining work-life boundaries—while staying grounded in their personal motivations and values. Through their stories, the research offers insight into the role of passion, resilience, and supportive environments in sustaining meaningful and fulfilling careers.",
+keywords: ["Passion","Resilience","Hospitality field","Qualitative","Professional dimensions"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 3,
-  title: "Mathematics Anxiety and Its Effects on Learning",
-  authors: "M. H. Ashcraft",
-  year: 2002,
-  type: "Qualitative",
-  field: "Mathematics",
-  strand: "STEM",
-  abstractShort:
-    "This study examines the cognitive effects of mathematics anxiety.",
-  abstractFull:
-    "This paper explores mathematics anxiety and its effects on working memory and problem-solving performance. The findings suggest that anxiety interferes with cognitive processing, negatively impacting mathematical learning and achievement.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ662941.pdf",
-  link: "https://eric.ed.gov/?id=EJ662941"
+id: 3,
+category: "Qualitative",
+title: "Think Positive, Do Positive: Experiences of Millennials Coping with Stress as Call Center Agents Ages Between 28 to 34 Years Old",
+authors: "Syesha Victoria Ysabelle E. Cortez, Jella Mariel A. Cruz, Marthena Calix M. Del Mundo, Lavrylle Kenczeen C. Legaspi, Ysa Miel C. Ramos",
+gradeLevel: "11",
+strand: "STEM",
+year: 2025,
+apaCitation:
+"Cortez, S. V. Y. E., Cruz, J. M. A., Del Mundo, M. C. M., Legaspi, L. K. C., & Ramos, Y. M. C. (2025). Think positive, do positive: Experiences of millennials coping with stress as call center agents ages between 28 to 34 years old. RC-JHS Library.",
+field: "Medicine / Occupational Psychology",
+controlNumber: "TSHS 0007",
+location: "RC-JHS Library",
+abstract:
+"This study explores the coping mechanisms of Millennials working as a Call Center Agent to manage work related stress. By the use of thematic analysis, the study identified 5 core categories: Position in a call center field, Interacting with clients, Struggles of a call center agent, Coping with stress, and Motivation. The study finds out the different coping mechanisms of workers as a millennial that works as a call center agent working for 5 years. This study will help as a guide to be fully prepared when taking this path. After conducting the interview, the study concludes that working as a call center agent is very tiring as they experience lack of sleep, time, and health issues.",
+keywords: ["Coping mechanisms","Millennials","Call Center Agent","Stress","Thematic analysis"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 4,
-  title: "User Acceptance of Smart Home Technologies",
-  authors: "A. Wilson, T. Hargreaves",
-  year: 2015,
-  type: "Qualitative",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This study investigates household acceptance of smart home technologies.",
-  abstractFull:
-    "Using in-depth household studies, this research explores user acceptance of smart home technologies. Results highlight usability, trust, and privacy as critical factors shaping adoption decisions.",
-  pdf: "https://core.ac.uk/download/pdf/30639442.pdf",
-  link: "https://core.ac.uk/works/30639442"
+id: 4,
+category: "Qualitative",
+title: "The Lived Experiences of STEM 12 Senior High School Students in Dealing with Poor Sleep Quality for School Year 2024-2025 in Rogationist College",
+authors: "Clarisse O. Balanquit, Christine T. Dela Peña, Dyra Q. Dimapilis, Noah Gabriel C. Nuestro, Cindy Rea R. Oliveros",
+gradeLevel: "11",
+strand: "STEM",
+year: 2025,
+apaCitation:
+"Balanquit, C. O., Dela Peña, C. T., Dimapilis, D. Q., Nuestro, N. G. C., & Oliveros, C. R. R. (2025). The lived experiences of a STEM 12 senior high school students in dealing with poor sleep quality for school year 2024-2025 in Rogationist College. RC-JHS Library.",
+field: "Medicine",
+controlNumber: "TSHS 0005",
+location: "RC-JHS Library",
+abstract:
+"This study aims to learn about the different experiences of different Grade 12 STEM students who are dealing with a poor quality of sleep. Qualitative research is conducted with the help of the phenomenological research design, which is designed for studies that are focused on the experiences of the respondents. With the help of an online virtual interview, via Google Meet and Zoom, the researchers can gather qualitative data which were interpreted through the use of content analysis. To sum up the findings, the study found that the students experienced struggles with their energy levels, routine, health, and time management. It is also mentioned a lot of times in the findings that students experienced different body pains due to poor sleep quality, including physical and mental fatigue.",
+keywords: ["Sleep","Lived Experiences","Poor Sleep Quality","Sleep Deficiency"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 5,
-  title: "Project-Based Learning: What and How Do Students Learn?",
-  authors: "C. E. Hmelo-Silver",
-  year: 2004,
-  type: "Qualitative",
-  field: "Engineering",
-  strand: "STEM",
-  abstractShort:
-    "This study reviews learning outcomes in project-based learning.",
-  abstractFull:
-    "This paper examines how students learn through project-based learning environments, highlighting gains in conceptual understanding, problem-solving skills, and collaboration, particularly in engineering education.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ679133.pdf",
-  link: "https://eric.ed.gov/?id=EJ679133"
+id: 5,
+category: "Qualitative",
+title: "Balancing Family Time and Career: Exploring Work-Life Balance Challenges of Computer Programmers from Cavite",
+authors: "Miki James A. Aure, Claire H. Caimoy, Benjamin D. De Guzman, Viennesy Nicole B. Dela Cruz, Gavriel T. Lizura",
+gradeLevel: "11",
+strand: "STEM",
+year: 2025,
+apaCitation:
+"Aure, M. J. A., Caimoy, C. H., De Guzman, B. D., Dela Cruz, V. N. B., & Lizura, G. T. (2025). Balancing family time and career: Exploring work-life balance challenges of computer programmers from Cavite. RC-JHS Library.",
+field: "Social",
+controlNumber: "TSHS 0006",
+location: "RC-JHS Library",
+abstract:
+"This qualitative research explores the work-life balance of computer programmers in Cavite, with a particular focus on the challenges they face in managing family time alongside professional responsibilities. Using a basic interpretative design, the study involved in-depth interviews with five computer programmers, each with 5–10 years of industry experience. Through thematic analysis, the study identified three core categories: negative experiences in achieving balance, coping mechanisms for managing stress, and personal learnings from lived experiences. The study concludes that achieving a sustainable work-life balance requires a combination of personal discipline, strategic planning, and continuous self-improvement.",
+keywords: ["Work-Life Balance","Computer Programmers","Time Management","Stress Management","Personal Growth"],
+resources: [],
+pdf: null
+},
+
+/* =====================================================
+QUANTITATIVE STUDIES
+===================================================== */
+
+{
+id: 6,
+category: "Quantitative",
+title: "Correlation Between Sleep Duration and Focus Among the Senior High School Students of Rogationist College",
+authors: "Jan Albert A. Bayot, Ayssa D. Caparal, Ralph Clarenz C. Igos, Clarenz Bennette Tardio, May Rose M. Tirrell",
+gradeLevel: "12",
+strand: "STEM",
+year: 2024,
+apaCitation:
+"Bayot, J. A. A., Caparal, A. D., Igos, R. C. C., Tardio, C. B., Tirrell, M. R. M. (2024). Correlation between sleep duration and focus among the senior high school students of Rogationist College. RC-JHS Library.",
+field: "Medicine",
+controlNumber: "TSHS 0020",
+location: "RC-JHS Library",
+abstract:
+"More than half of teenagers aged fifteen and older get less than seven hours of sleep each night, and approximately 85% get less than the recommended 8-10 hours. Sleep is essential for the body and mind to recharge, enabling us to wake up feeling refreshed and alert. When we don't get enough sleep, our brain cannot function properly, leading to problems such as difficulty concentrating, reduced thinking abilities, slower reactions, mood swings, and a higher likelihood of getting sick. The purpose of this study was to determine the correlation between sleep duration and focus among the senior high school students of Rogationist College. Descriptive correlation was utilized in this study. The respondents of the study were the 394 students of the senior high school, where 222 students were from grade 11 and 173 students were from grade 12. The sampling technique that was used was the stratified random sampling. The sample size was determined using the Slovin's formula. For the research instrument, the researchers used a three-part questionnaire that included the adopted sleep duration questionnaire and adapted focus questionnaire. Frequency and Percentage and Mean was used to determine the sleep duration and focus of the respondents, and the Pearson correlation was used to determine whether there is a correlation or none between sleep duration and focus. The findings showed that the senior high school students have moderately adequate sleep duration and moderate focus. It was concluded that there is no correlation between sleep duration and focus among the senior high school students of Rogationist College.",
+keywords: ["Sleep","Sleep Duration","Focus","Pearson Correlation"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 6,
-  title: "Evaluation of Evidence-Based Practices in Online Learning",
-  authors: "B. Means, Y. Toyama",
-  year: 2010,
-  type: "Quantitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This meta-analysis evaluates online learning effectiveness.",
-  abstractFull:
-    "This meta-analysis compares online, blended, and face-to-face instruction. Results show that students in blended learning environments outperform those in traditional settings under specific instructional conditions.",
-  pdf: "https://files.eric.ed.gov/fulltext/ED505824.pdf",
-  link: "https://eric.ed.gov/?id=ED505824"
+id: 7,
+category: "Quantitative",
+title: "Recyclable Waste Management Among the Residents of Amadeo, Cavite",
+authors: "Lorraine Riah A. Baydah, Riana Baydan, Riana Cassandra P. Bayot, Nathalia Trixy V. Desingaño, Jozaine Althe A. Lacadman, Rheigne Crizianne L. Landicho, Paul Gerald B. Laurenciana, Ayessa Grace B. Mojica, Zophia V. Sabio",
+gradeLevel: "12",
+strand: "STEM",
+year: 2025,
+apaCitation:
+"Lorraine Riah A. Baydah, Riana Baydan, Riana Cassandra P. Bayot, Nathalia Trixy V. Desingaño, Jozaine Althe A. Lacadman, Rheigne Crizianne L. Landicho, Paul Gerald B. Laurenciana, Ayessa Grace B. Mojica, Zophia V. Sabio",
+field: "Engineering / Environmental",
+controlNumber: "TSHS 0014",
+location: "RC-JHS Library",
+abstract:
+"This study aimed to examine the management of recyclable wastes among the residents of Amadeo, Cavite, focusing on practices related to disposal, segregation, transport, and recycling. Utilizing a descriptive-survey research design, the researchers collected data from 300 residents using convenience sampling and analyzed responses through frequency, percentage, and mean statistical tools. Findings reveal that plastic waste, particularly water bottles, was the most common recyclable waste, while compact discs were the least discarded. Similarly, tissue paper was the highest in paper waste, whereas cardboard ranked the lowest. The study concludes that while residents exhibit commendable practices in recyclable waste management, there are still gaps in infrastructure and community participation that need to be addressed. These insights emphasize the importance of reinforcing community involvement, improving waste collection resources, and enhancing access to recycling facilities to optimize waste management efforts in Amadeo, Cavite.",
+keywords: ["Waste Management","Recyclable Waste","Segregation","Recycling"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 7,
-  title: "Long-Term Exposure to Air Pollution and Mortality",
-  authors: "C. A. Pope, D. W. Dockery",
-  year: 2006,
-  type: "Quantitative",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This study examines air pollution exposure and health outcomes.",
-  abstractFull:
-    "This epidemiological study analyzes long-term exposure to air pollution and its association with cardiovascular and respiratory mortality, demonstrating significant public health risks.",
-  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC1564030/pdf/ehp0114-001562.pdf",
-  link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC1564030/"
+id: 8,
+category: "Quantitative",
+title: "The Comparison Between Male and Female STEM Students Level of Interest in Pursuing Engineering in Rogationist College",
+authors: "Audrey Mei P. Chavez, Andrei Joseph D. Legisniana, Rafael Jacob D. Mabaquiao, Sean Angelo F. Oracion, Christian Neo Reyes, Aaron Jeoff C. Rojo, Gianemmanuel D. Sulit",
+gradeLevel: "12",
+strand: "STEM",
+year: 2024,
+apaCitation:
+"Chavez, A. M. P., Legisniana, A. J. D., Mabaquiao, R. J. D., Oracion, S. A. F., Reyes, C. N., Rojo, A. J, Sulit, G. D. (2024). The comparison between male and female STEM students level of interest in pursuing engineering in Rogationist College. RC-JHS Library.",
+field: "Engineering",
+controlNumber: "TSHS 0013",
+location: "RC-JHS Library",
+abstract:
+"This study explores the comparison between male and female stem students level of interest in pursuing engineering at Rogationist College during the 2023-2024 school year. The researchers utilized quantitative research, using a pre-survey to determine the 29 male and 22 female respondents, hence purposive quota sampling. The descriptive comparative method was used in the study. Purposive quota sampling was used to determine the needed respondents. The researchers used an adapted questionnaire that contains specific and detailed questions as a research instrument. Data collection was accomplished through Google Forms. The data is treated using frequency, percentage, mean, and T-test. Based on the research conducted, the study surveyed 44 STEM students, focused on engineering courses. Mechanical engineering was the most preferred course, followed by nuclear engineering. Male STEM students reported a strong interest in engineering occupations and a desire to become an engineer in the future. Female STEM students exhibited a high enthusiasm in pursuing engineering, with a mean of 3.68. total, the total interest in engineering was 3.26. The results imply that STEM students have a significant interest in engineering. A recommendation to future researchers is to conduct a survey or interview with female engineering students and graduates from Rogationist College and other institutions to understand their motivations, challenges, and experiences in pursuing engineering careers. You can also compare their responses with those of male engineering students and graduates to identify any differences or similarities.",
+keywords: ["Engineering","Interest","STEM","Students"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 8,
-  title: "Factors Influencing Mathematics Achievement: A Meta-Analysis",
-  authors: "H. Wang, J. Eccles",
-  year: 2013,
-  type: "Quantitative",
-  field: "Mathematics",
-  strand: "STEM",
-  abstractShort:
-    "This meta-analysis identifies factors influencing math achievement.",
-  abstractFull:
-    "This meta-analysis synthesizes empirical research on mathematics achievement, identifying student motivation, instructional quality, and socio-economic status as significant predictors of performance.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ1016162.pdf",
-  link: "https://eric.ed.gov/?id=EJ1016162"
+id: 9,
+category: "Quantitative",
+title: "Customer Satisfaction on Selling Innovative Caffeine-Infused Visayan and Mindanaoan Beverages Among Senior High School Students of Rogationist College",
+authors: "Jeffrey John Gabriel R. Bactat, Mario O. Batino, Madeline M. Beltran, Grace Zelle A. Castillo, Denise Lynn A. Mendoza, Regine Belle R. Olivar",
+gradeLevel: "12",
+strand: "ABM",
+year: 2024,
+apaCitation:
+"Bactat, J. J. G. R., et al. (2024). Customer satisfaction on selling innovative caffeine infused beverages. RC-JHS Library.",
+field: "Business / Marketing",
+controlNumber: "TSHS 0004",
+location: "RC-JHS Library",
+abstract:
+"This study was conducted to determine and gain insights on the satisfaction of customers on selling innovative caffeine-infused traditional Visayan and Mindanaoan beverages among senior high school students of Rogationist College. The researchers utilized a descriptive survey as the research design and distributed an adapted three-part questionnaire to the respondents, consisting of their familiarity to traditional delicacies, reasons for caffeine intake, and levels of satisfaction in terms of the marketing mix. Moreover, quota sampling was used in determining the 50 respondents, wherein 30 are leche flan latte customers, 14 are sikwate latte customers, and 6 ube latte customers surveyed. The findings showed that the respondents are mostly familiar with Ube, considered taste as the most significant factor in their caffeine intake, and that the senior high school customers of the innovative caffeine infused products very satisfied with the Visayan and Mindanaoan beverages in terms of all the domains of the marketing mix, namely product, price, place, and promotion. Therefore, the researchers conclude that the innovative caffeine-infused traditional Visayan and Mindanaoan beverages effectively meet the expectations and preferences of the consumers, indicating a strong potential for market success and highlighting the importance of taste in product development and marketing strategies, in which specific aspects could still be further improved, and how could they improve handling the customers in accordance with the familiarity to the traditional delicacies and reasons for caffeine intake. The insights gathered from this study had greatly benefited the ill.",
+keywords: ["Customer Satisfaction","Beverages","Marketing Mix","Students"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 9,
-  title: "A Comparison of Machine Learning Algorithms for Spam Detection",
-  authors: "V. Metsis, I. Androutsopoulos",
-  year: 2006,
-  type: "Quantitative",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This study compares machine learning algorithms for spam detection.",
-  abstractFull:
-    "This study evaluates several machine learning classifiers for spam detection using accuracy and recall metrics, highlighting performance differences across algorithms.",
-  pdf: "https://www.cs.ucy.ac.cy/~nicolasp/Publications/Metsis06a.pdf",
-  link: "https://www.cs.ucy.ac.cy/~nicolasp/Publications/Metsis06a.pdf"
+id: 10,
+category: "Quantitative",
+title: "Electric Consumption of Selected Households in Dasmariñas Cavite",
+authors: "Keith David D. Ambrad, Jeanne Denice A. Jacinto, Denisse Anne P. Magsino, Augustus John B. Marasigan, Atashia M. Panganiban, John Paul R. Ruiz, Nichollai Cassie A. San Jose, Nadzieja G. Varias",
+gradeLevel: "12",
+strand: "STEM",
+year: 2025,
+apaCitation:
+"Ambrad, K. D. D., et al. (2025). Electric consumption of selected households in Dasmariñas Cavite. RC-JHS Library.",
+field: "Energy Studies",
+controlNumber: "TSHS 0027",
+location: "RC-JHS Library",
+abstract:
+"This study aims to determine the electricity consumption of the selected households in Dasmariñas, Cavite in September 2024. The study used descriptive survey quantitative as research design and utilized convenience as sampling method. The researchers administered a survey questionnaire online through Google Forms and in person, to gather responses from 335 households in Dasmarinas Cavite. The collected data were analyzed using the frequency and mean. The results showed that most of them were residing with 4 people in the household. Majority of the responses of residents have an electricity consumption of 400-500 kWh (P 4,742.76 - P 5,928.45). The study further revealed that factors influencing electricity consumption in terms of socio-economic and dwelling-related factors are moderately influenced. Based on the findings, the researchers concluded that in terms of appliance-related factors it shows that it highly influenced the electricity consumption in a household. The research concluded that socio-economic and dwelling-related factors have moderately influenced the consumption of a household.",
+keywords: ["Electricity","Consumption","Households","Energy"],
+resources: [],
+pdf: null
+},
+
+/* =====================================================
+CAPSTONE PROJECTS
+===================================================== */
+
+{
+id: 11,
+category: "Capstone",
+title: "ROG-BEEP: A Smart Card Sensor for Commuters",
+authors: "Althea Lauriz P. Gevada, Justine E. Gripo, Andrei Joseph D. Legasniana, Lelaine Alexa L. Luna, Atasha Gwenevier C. Mercado, Nica Andrea R. Mulitas, Jesserie R. Ragaza",
+gradeLevel: "12",
+strand: "STEM",
+year: 2024,
+apaCitation:
+"Gevada, A. L. P., et al. (2024). Rog-beep: A smart card sensor for commuters. RC-JHS Library.",
+field: "Technology",
+controlNumber: "TSHS 0005",
+location: "RC-JHS Library",
+abstract:
+"Numerous issues arise upon departure from Rogationist College school grounds. Some students pretend to be commuters in order to exit the premises, leading to prolonged queues due to manual verification procedures conducted by guards using paper-based methods. In response to these challenges, a project has been created to address both students' safety and security concerns, as well as to enable prefects to monitor departing students effectively. Utilizing Rog-Beep, the project aims to speed up the identification and verification process for authorized commuters. A survey was conducted by the proponents to assess effectiveness and gather participants' assessment of the product. The main objective is to reduce the unauthorized departure of students, thereby enhancing overall safety and security measures",
+keywords: ["Smart Card","Sensor","Technology","Commuters"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 10,
-  title: "Structural Performance of Reinforced Concrete Beams",
-  authors: "A. M. Neville",
-  year: 2011,
-  type: "Quantitative",
-  field: "Engineering",
-  strand: "STEM",
-  abstractShort:
-    "This study analyzes reinforced concrete beam behavior.",
-  abstractFull:
-    "This quantitative study investigates load capacity and crack development in reinforced concrete beams through experimental testing and numerical modeling.",
-  pdf: "https://www.diva-portal.org/smash/get/diva2:1326262/FULLTEXT01.pdf",
-  link: "https://www.diva-portal.org/"
-},
-
-/* ---------- ENGLISH ---------- */
-
-{
-  id: 11,
-  title: "Digital Storytelling in Language Learning",
-  authors: "B. Robin",
-  year: 2008,
-  type: "Qualitative",
-  field: "English",
-  strand: "HUMMS",
-  abstractShort:
-    "This study examines digital storytelling in language education.",
-  abstractFull:
-    "This study explores the use of digital storytelling as a pedagogical tool in language learning, highlighting benefits related to student engagement, creativity, and language development.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ815767.pdf",
-  link: "https://eric.ed.gov/?id=EJ815767"
+id: 12,
+category: "Capstone",
+title: "Medicine-On-The-Go: A Vending Machine",
+authors: "Antoinnette Elliz B. Angcaya, Ysabelle Maria Fides A. Asa, Illyssa Roxanne R. Aure, Junee O. Bagay, Michael James M. Canaveral",
+gradeLevel: "12",
+strand: "STEM",
+year: 2018,
+apaCitation:
+"Angcaya, A. E. B., Asa, Y. M. F. A., Aure, I. R. R., Bagay, J. O., & Canaveral, M. J. M. (2018). Medicine-on-the-go: A vending machine. RC-JHS Library.",
+field: "Medicine",
+controlNumber: "TSHS 0021",
+location: "RC-JHS Library",
+abstract:
+"This research paper aims to modify the vending machines through the use of mechanisms that do not require electricity to function. Studies have found that vending machines could contain almost anything man could ever need, even medicines. In a 2015 study by Calderon et al (2015), the automated vending machine that provided the convenience of over-the-counter (OTC) medicines has positively dispensed the right medicine requested by the user. The researchers had successfully built a vending machine that dispenses medicine through the use of popsicle sticks as its mechanisms. The vending machine only accepts 5-peso coin and rejects 1-peso coin, 25-centavo coin, 10-centavo coin and a 5-centavo coin. Inside the vending machine, there are two types of OTC drugs namely, Paracetamol (Biogesic) and Mefenamic Acid (Dolfenal). After testing the vending machine, it was seen that the medicine were successfully dispensed by the machine when a two 5-peso coin is inserted. As for the observation made, it was concluded that popsicle sticks can be an alternative mechanisms for creating a vending machine that is suited for a small type of community including schools.",
+keywords: ["Vending machine","Medicine","OTC drugs"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 12,
-  title: "Reading Motivation and Achievement in ESL Learners",
-  authors: "J. Guthrie",
-  year: 2007,
-  type: "Quantitative",
-  field: "English",
-  strand: "HUMMS",
-  abstractShort:
-    "This study examines reading motivation among ESL learners.",
-  abstractFull:
-    "This quantitative study examines the relationship between reading motivation and reading achievement among English language learners, finding strong positive associations.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ768123.pdf",
-  link: "https://eric.ed.gov/?id=EJ768123"
-},
-
-/* ---------- SCIENCE & MEDICAL ---------- */
-
-{
-  id: 13,
-  title: "Simulation-Based Learning in Science Education",
-  authors: "R. Rutten",
-  year: 2012,
-  type: "Quantitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This study evaluates simulation-based science learning.",
-  abstractFull:
-    "This study examines the effectiveness of simulation-based learning in science education, showing improved conceptual understanding compared to traditional instruction.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ986479.pdf",
-  link: "https://eric.ed.gov/?id=EJ986479"
+id: 13,
+category: "Capstone",
+title: "Heat-Driven Power Bank",
+authors: "Irish Fe Y. Bolaños, Thea Nicole M. Matel, Raycelle M. Mendoza, Neil Joshua P. Pangalinan, Ma. Hazel R. Vidallon",
+gradeLevel: "12",
+strand: "STEM",
+year: 2018,
+apaCitation: "Bolaños, I. F. Y., Matel, T. N. M., Mendoza, R. M., Pangalinan, N. J. P., & Vidallon, M. H. R. (2018). Heat-driven power bank. RC-JHS Library.",
+field: "Technology",
+controlNumber: "TSHS 0018",
+location: "RC-JHS Library",
+abstract: "This project aims to know and understand the effective use of heat application to provide electricity. Specifically, the researchers seek to determine the significance of heat to conduct electricity for its usage. The researcher used domestic materials that are easy to find such as wires and thermoelectric plates to create the charger. The heat-driven powerbank creates and harnesses a temperature differential to generate electricity using its Thermoelectric Generator. The user exposes its metal blade to a flame to heat it up, while the other side is cooled by a small reservoir on top to be filled with ice, causing a voltage to build up between the two sides. The aim of the researchers is to create a power supply that is handy and easy to manipulate with a reliable source.",
+keywords: ["Thermoelectricity", "Electric energy", "Heat", "Smartphones"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 14,
-  title: "Mobile Health Applications and User Engagement",
-  authors: "S. Zhao",
-  year: 2019,
-  type: "Qualitative",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This study explores user engagement with mobile health apps.",
-  abstractFull:
-    "This qualitative study explores user experiences with mobile health applications, identifying usability, trust, and perceived usefulness as key engagement factors.",
-  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6733033/pdf/jmir-21-e11990.pdf",
-  link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6733033/"
+id: 14,
+category: "Capstone",
+title: "Mango Peels as Bioplastic",
+authors: "Krizzie Gabrielle C. Ambat, Iris Elaine M. Cabigan, Alena Avril Joy R. De Juan, Francel E. Lalo, Zidwell Julian V. Nave, Angelo John M. Salonga, Jason Andrew I. Siojo",
+gradeLevel: "12",
+strand: "STEM",
+year: 2023,
+apaCitation: "Ambat, K. G. C., Cabigan, I. E. M., De Juan, A. A. J. R., Lalo, F. E., Nave, Z. J. V., Salonga, A. J. M., & Siojo, J. A. I. (2023). Mango peels as bioplastic. RC-JHS Library.",
+field: "Engineering",
+controlNumber: "TSHS 0021",
+location: "RC-JHS Library",
+abstract: "Plastic takes hundreds of years to decompose because most bacteria cannot break them down. The wide usage of plastic all over the world is detrimental to the environment no matter how convenient it is to use. Because of this, scientists started to make biodegradable plastics that are generally made from plants. The research study entitled 'Mango Peels' as Bioplastic was conducted to discover a new raw material alternative in making plastic with the use of primarily mango peels, gulaman powder, hydrochloric acid, and glycerine. The bioplastic was made with three main steps: creating the mixture, putting it in a molder, and drying. After the bioplastic was made, it has undergone a series of testing to test the durability, reusability, and decomposition. As a result, the product has good reusability and can handle 3 kilograms of dry goods. It has trouble carrying items that are wet since it gets damaged by too much moisture. The quality of the product is not much impacted by temperature. As a greener alternative to traditional plastic, the mango peel bioplastic largely met its objectives, although there is still much space for improvement.",
+keywords: ["Mango peels", "Bioplastic", "Decomposition", "Reusability", "Hydrochloric acid", "Glycerine"],
+resources: [],
+pdf: null
 },
 
 {
-  id: 15,
-  title: "Predictors of Academic Success in Online Courses",
-  authors: "J. Broadbent",
-  year: 2015,
-  type: "Quantitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This study identifies predictors of success in online learning.",
-  abstractFull:
-    "This quantitative study examines self-regulated learning strategies as predictors of academic success in online higher education courses.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ1062194.pdf",
-  link: "https://eric.ed.gov/?id=EJ1062194"
-},
-
-/* ---------- TECHNOLOGY ---------- */
-
-{
-  id: 16,
-  title: "Learning Analytics in Higher Education",
-  authors: "G. Siemens",
-  year: 2013,
-  type: "Quantitative",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This study examines the role of learning analytics.",
-  abstractFull:
-    "This study examines how learning analytics can be used to identify learning patterns and improve student outcomes in higher education.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ1016027.pdf",
-  link: "https://eric.ed.gov/?id=EJ1016027"
-},
-
-{
-  id: 17,
-  title: "Workload and Stress Among Nurses",
-  authors: "E. Jennings",
-  year: 2017,
-  type: "Quantitative",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This study examines workload and stress among nurses.",
-  abstractFull:
-    "This study examines the relationship between workload and occupational stress among hospital nurses, identifying workload as a significant predictor of stress.",
-  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5709278/pdf/ijerph-14-01309.pdf",
-  link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5709278/"
-},
-
-{
-  id: 18,
-  title: "Technology Acceptance Model: A Meta-Analysis",
-  authors: "Y. Lee, K. Kozar",
-  year: 2012,
-  type: "Quantitative",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This meta-analysis examines the Technology Acceptance Model.",
-  abstractFull:
-    "This meta-analysis evaluates the Technology Acceptance Model, confirming perceived usefulness and ease of use as strong predictors of technology adoption.",
-  pdf: "https://core.ac.uk/download/pdf/301370231.pdf",
-  link: "https://core.ac.uk/works/301370231"
-},
-
-{
-  id: 19,
-  title: "Inquiry-Based Science Teaching: Teacher Perspectives",
-  authors: "N. Wilson",
-  year: 2018,
-  type: "Qualitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This study explores teacher perspectives on inquiry-based teaching.",
-  abstractFull:
-    "This qualitative study explores teachers’ reflections on implementing inquiry-based science instruction, identifying benefits for student engagement and challenges in classroom management.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ1172713.pdf",
-  link: "https://eric.ed.gov/?id=EJ1172713"
-},
-
-{
-  id: 20,
-  title: "Student Motivation in Self-Paced Online Learning",
-  authors: "J. Lim",
-  year: 2020,
-  type: "Quantitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This study examines motivation in self-paced learning.",
-  abstractFull:
-    "This study examines motivational factors influencing student persistence and engagement in self-paced online learning environments.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ1262467.pdf",
-  link: "https://eric.ed.gov/?id=EJ1262467"
-},
-{
-  id: 21,
-  title: "Students’ Experiences With Virtual Laboratories in Science Education",
-  authors: "L. F. Faulconer, M. Gruss",
-  year: 2018,
-  type: "Qualitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This study explores student experiences using virtual laboratories.",
-  abstractFull:
-    "This qualitative study explores undergraduate students’ experiences with virtual laboratories in science courses. Findings indicate increased accessibility and flexibility, while also highlighting limitations related to hands-on skill development.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ1187423.pdf",
-  link: "https://eric.ed.gov/?id=EJ1187423"
-},
-
-{
-  id: 22,
-  title: "Heat Transfer Analysis Using Numerical Simulation",
-  authors: "R. Kumar, S. Suresh",
-  year: 2017,
-  type: "Quantitative",
-  field: "Engineering",
-  strand: "STEM",
-  abstractShort:
-    "This study analyzes heat transfer using numerical simulation.",
-  abstractFull:
-    "This quantitative study applies numerical simulation techniques to analyze heat transfer characteristics in mechanical systems, demonstrating how material properties and boundary conditions influence thermal efficiency.",
-  pdf: "https://core.ac.uk/download/pdf/235048685.pdf",
-  link: "https://core.ac.uk/works/235048685"
-},
-
-{
-  id: 23,
-  title: "Teachers’ Beliefs About Technology Integration in Mathematics Instruction",
-  authors: "E. Ertmer, P. Ottenbreit-Leftwich",
-  year: 2010,
-  type: "Qualitative",
-  field: "Mathematics",
-  strand: "STEM",
-  abstractShort:
-    "This study examines teachers’ beliefs about technology integration.",
-  abstractFull:
-    "This qualitative study investigates how teachers’ pedagogical beliefs influence their integration of technology in mathematics instruction. Findings show that belief systems strongly shape instructional technology use.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ898906.pdf",
-  link: "https://eric.ed.gov/?id=EJ898906"
-},
-
-{
-  id: 24,
-  title: "Reading Attitudes and Achievement of ESL Learners",
-  authors: "Y. Yamashita",
-  year: 2007,
-  type: "Quantitative",
-  field: "English",
-  strand: "HUMMS",
-  abstractShort:
-    "This study examines reading attitudes among ESL learners.",
-  abstractFull:
-    "This quantitative study examines the relationship between reading attitudes and reading achievement among English as a Second Language learners, revealing positive correlations between motivation and comprehension.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ772592.pdf",
-  link: "https://eric.ed.gov/?id=EJ772592"
-},
-
-{
-  id: 25,
-  title: "User Experience Factors in Mobile Health Applications",
-  authors: "M. P. Zapata, L. Fernández-Alemán",
-  year: 2015,
-  type: "Qualitative",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This study explores user experience factors in mobile health apps.",
-  abstractFull:
-    "This qualitative review explores usability, accessibility, and user satisfaction factors affecting mobile health application adoption in healthcare settings.",
-  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4678353/pdf/medinform-04-00130.pdf",
-  link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4678353/"
-},
-
-{
-  id: 26,
-  title: "Engineering Students’ Experiences With Remote Laboratories",
-  authors: "J. Ma, J. Nickerson",
-  year: 2006,
-  type: "Qualitative",
-  field: "Engineering",
-  strand: "STEM",
-  abstractShort:
-    "This study explores engineering students’ experiences with remote labs.",
-  abstractFull:
-    "This qualitative study examines engineering students’ learning experiences with remote laboratories, highlighting flexibility benefits and challenges related to experimental realism.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ741978.pdf",
-  link: "https://eric.ed.gov/?id=EJ741978"
-},
-
-{
-  id: 27,
-  title: "Study Habits and Academic Performance in Mathematics",
-  authors: "M. Nonis, G. Hudson",
-  year: 2010,
-  type: "Quantitative",
-  field: "Mathematics",
-  strand: "STEM",
-  abstractShort:
-    "This study examines the relationship between study habits and performance.",
-  abstractFull:
-    "This quantitative study analyzes how study habits influence mathematics performance, revealing that time management and consistency are strong predictors of achievement.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ889692.pdf",
-  link: "https://eric.ed.gov/?id=EJ889692"
-},
-
-{
-  id: 28,
-  title: "Factors Affecting English Language Proficiency of Secondary Students",
-  authors: "M. Butler, J. Hakuta",
-  year: 2006,
-  type: "Quantitative",
-  field: "English",
-  strand: "HUMMS",
-  abstractShort:
-    "This study examines factors affecting English proficiency.",
-  abstractFull:
-    "This quantitative study examines linguistic, instructional, and socio-cultural factors influencing English language proficiency among secondary school learners.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ768494.pdf",
-  link: "https://eric.ed.gov/?id=EJ768494"
-},
-
-{
-  id: 29,
-  title: "Simulation-Based Learning in Undergraduate Science Courses",
-  authors: "W. Rutten, J. van Joolingen",
-  year: 2012,
-  type: "Quantitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This study evaluates simulation-based learning effectiveness.",
-  abstractFull:
-    "This quantitative study evaluates the impact of simulation-based learning on conceptual understanding in undergraduate science education.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ986479.pdf",
-  link: "https://eric.ed.gov/?id=EJ986479"
-},
-
-{
-  id: 30,
-  title: "Learning Management System Acceptance Among University Students",
-  authors: "S. Park",
-  year: 2009,
-  type: "Quantitative",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This study examines LMS acceptance among students.",
-  abstractFull:
-    "This study applies the Technology Acceptance Model to examine factors influencing university students’ acceptance of learning management systems.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ844540.pdf",
-  link: "https://eric.ed.gov/?id=EJ844540"
-},
-
-{
-  id: 31,
-  title: "Workload, Stress, and Job Satisfaction Among Nurses",
-  authors: "R. C. McVicar",
-  year: 2016,
-  type: "Quantitative",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This study examines workload and stress among nurses.",
-  abstractFull:
-    "This quantitative study examines the relationship between workload, occupational stress, and job satisfaction among hospital nurses.",
-  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4942872/pdf/ijerph-13-00755.pdf",
-  link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4942872/"
-},
-
-{
-  id: 32,
-  title: "Digital Storytelling and Writing Skills in ESL Classrooms",
-  authors: "S. Yang, Y. Wu",
-  year: 2012,
-  type: "Quantitative",
-  field: "English",
-  strand: "HUMMS",
-  abstractShort:
-    "This study evaluates digital storytelling in ESL writing.",
-  abstractFull:
-    "This quantitative study examines the effects of digital storytelling on ESL students’ writing skills, demonstrating significant improvements in coherence and engagement.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ992307.pdf",
-  link: "https://eric.ed.gov/?id=EJ992307"
-},
-
-{
-  id: 33,
-  title: "Learning Analytics for Student Success in Higher Education",
-  authors: "A. Ferguson",
-  year: 2012,
-  type: "Quantitative",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This study examines learning analytics for student success.",
-  abstractFull:
-    "This study explores how learning analytics can support student success by identifying learning patterns and providing timely feedback.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ1016028.pdf",
-  link: "https://eric.ed.gov/?id=EJ1016028"
-},
-
-{
-  id: 34,
-  title: "Inquiry-Based Instruction and Science Achievement",
-  authors: "M. Minner, A. Levy",
-  year: 2010,
-  type: "Quantitative",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This study examines inquiry-based instruction in science.",
-  abstractFull:
-    "This quantitative review examines the relationship between inquiry-based science instruction and student achievement, showing positive learning outcomes.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ896157.pdf",
-  link: "https://eric.ed.gov/?id=EJ896157"
-},
-
-{
-  id: 35,
-  title: "Remote Laboratories in Engineering Education: A Review",
-  authors: "D. Lowe, S. Murray",
-  year: 2013,
-  type: "Qualitative",
-  field: "Engineering",
-  strand: "STEM",
-  abstractShort:
-    "This study reviews remote laboratories in engineering education.",
-  abstractFull:
-    "This qualitative review examines the design, implementation, and educational impact of remote laboratories in engineering education.",
-  pdf: "https://core.ac.uk/download/pdf/82142845.pdf",
-  link: "https://core.ac.uk/works/82142845"
-},
-
-{
-  id: 36,
-  title: "Student Motivation in Mathematics Learning",
-  authors: "P. R. Pintrich",
-  year: 2003,
-  type: "Quantitative",
-  field: "Mathematics",
-  strand: "STEM",
-  abstractShort:
-    "This study examines motivation in mathematics learning.",
-  abstractFull:
-    "This quantitative study examines motivational factors influencing mathematics learning, emphasizing the role of self-efficacy and goal orientation.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ663750.pdf",
-  link: "https://eric.ed.gov/?id=EJ663750"
-},
-
-{
-  id: 37,
-  title: "Adoption of Mobile Learning Technologies in Higher Education",
-  authors: "A. Kukulska-Hulme",
-  year: 2012,
-  type: "Qualitative",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This study explores mobile learning adoption.",
-  abstractFull:
-    "This qualitative study explores factors influencing the adoption of mobile learning technologies in higher education contexts.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ987860.pdf",
-  link: "https://eric.ed.gov/?id=EJ987860"
-},
-
-{
-  id: 38,
-  title: "Clinical Decision-Making Processes Among Nurses",
-  authors: "S. Thompson, M. Dowding",
-  year: 2009,
-  type: "Qualitative",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This study explores clinical decision-making among nurses.",
-  abstractFull:
-    "This qualitative study explores how nurses make clinical decisions in hospital settings, highlighting the influence of experience, protocols, and collaboration.",
-  pdf: "https://core.ac.uk/download/pdf/42314692.pdf",
-  link: "https://core.ac.uk/works/42314692"
-},
-
-{
-  id: 39,
-  title: "Students’ Experiences Learning Mathematical Proof",
-  authors: "G. Stylianides",
-  year: 2007,
-  type: "Qualitative",
-  field: "Mathematics",
-  strand: "STEM",
-  abstractShort:
-    "This study examines student experiences with mathematical proof.",
-  abstractFull:
-    "This qualitative study examines students’ experiences learning mathematical proof, identifying cognitive challenges and instructional implications.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ786457.pdf",
-  link: "https://eric.ed.gov/?id=EJ786457"
-},
-
-{
-  id: 40,
-  title: "User Satisfaction With Mobile Health Applications",
-  authors: "D. Martínez-Pérez",
-  year: 2014,
-  type: "Quantitative",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This study examines satisfaction with mobile health apps.",
-  abstractFull:
-    "This quantitative study examines user satisfaction with mobile health applications, identifying usability and perceived usefulness as key determinants.",
-  pdf: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4300524/pdf/ijerph-11-00453.pdf",
-  link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4300524/"
-},
-{
-  id: 41,
-  title: "Development of a Web-Based Research Catalog System",
-  authors: "Capstone Group A",
-  year: 2024,
-  type: "Capstone",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This capstone project develops a web-based research catalog system.",
-  abstractFull:
-    "This capstone project presents the design and development of a web-based research catalog system that enables users to search, filter, bookmark, and generate citations for academic studies. The system focuses on usability, scalability, and accessibility for students and faculty.",
-  pdf: null
-},
-
-{
-  id: 42,
-  title: "IoT-Based Smart Irrigation System for Agricultural Applications",
-  authors: "Capstone Group B",
-  year: 2023,
-  type: "Capstone",
-  field: "Engineering",
-  strand: "STEM",
-  abstractShort:
-    "This project develops an IoT-based smart irrigation system.",
-  abstractFull:
-    "This capstone project designs and implements an IoT-based smart irrigation system that uses soil moisture sensors and automated controls to optimize water usage and improve agricultural efficiency.",
-  pdf: null
-},
-
-{
-  id: 43,
-  title: "Mobile Application for Monitoring Patient Vital Signs",
-  authors: "Capstone Group C",
-  year: 2022,
-  type: "Capstone",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This project develops a mobile application for patient monitoring.",
-  abstractFull:
-    "This capstone project develops a mobile application that allows healthcare providers to monitor patient vital signs in real time using wearable sensors, improving data accessibility and patient care.",
-  pdf: null
-},
-
-{
-  id: 44,
-  title: "Predictive Analytics System for Student Academic Performance",
-  authors: "Capstone Group D",
-  year: 2023,
-  type: "Capstone",
-  field: "Science",
-  strand: "STEM",
-  abstractShort:
-    "This project applies predictive analytics to academic performance.",
-  abstractFull:
-    "This capstone project applies predictive analytics techniques to forecast student academic performance using historical academic records, supporting early intervention and academic advising.",
-  pdf: null
-},
-
-{
-  id: 45,
-  title: "Interactive Learning Platform for Enhancing Mathematics Skills",
-  authors: "Capstone Group E",
-  year: 2024,
-  type: "Capstone",
-  field: "Mathematics",
-  strand: "STEM",
-  abstractShort:
-    "This project develops an interactive mathematics learning platform.",
-  abstractFull:
-    "This capstone project designs an interactive learning platform aimed at improving mathematics skills through adaptive exercises, instant feedback, and progress tracking.",
-  pdf: null
-},
-
-{
-  id: 46,
-  title: "English Learning Chatbot for Vocabulary Development",
-  authors: "Capstone Group F",
-  year: 2024,
-  type: "Capstone",
-  field: "English",
-  strand: "HUMMS",
-  abstractShort:
-    "This project develops an English vocabulary learning chatbot.",
-  abstractFull:
-    "This capstone project develops an AI-powered chatbot that assists students in improving English vocabulary through conversational practice and contextual learning.",
-  pdf: null
-},
-
-{
-  id: 47,
-  title: "Automated Attendance System Using Facial Recognition",
-  authors: "Capstone Group G",
-  year: 2023,
-  type: "Capstone",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This project develops an automated attendance system.",
-  abstractFull:
-    "This capstone project presents an automated attendance system that uses facial recognition technology to record attendance efficiently and reduce manual administrative work.",
-  pdf: null
-},
-
-{
-  id: 48,
-  title: "Smart Energy Monitoring System for Buildings",
-  authors: "Capstone Group H",
-  year: 2023,
-  type: "Capstone",
-  field: "Engineering",
-  strand: "STEM",
-  abstractShort:
-    "This project develops a smart energy monitoring system.",
-  abstractFull:
-    "This capstone project develops a smart energy monitoring system that tracks electricity consumption in buildings using IoT sensors to support energy efficiency and sustainability.",
-  pdf: null
-},
-
-{
-  id: 49,
-  title: "Hospital Queue Management Dashboard",
-  authors: "Capstone Group I",
-  year: 2023,
-  type: "Capstone",
-  field: "Medical",
-  strand: "STEM",
-  abstractShort:
-    "This project develops a hospital queue management dashboard.",
-  abstractFull:
-    "This capstone project designs a real-time dashboard that monitors and manages patient queues in hospital departments, improving operational efficiency and patient flow.",
-  pdf: null
-},
-
-{
-  id: 50,
-  title: "Online Thesis Repository for Universities",
-  authors: "Capstone Group J",
-  year: 2024,
-  type: "Capstone",
-  field: "Technology",
-  strand: "STEM",
-  abstractShort:
-    "This project develops an online thesis repository.",
-  abstractFull:
-    "This capstone project develops a centralized online repository for storing, managing, and searching undergraduate and graduate theses, supporting academic research management.",
-  pdf: null
-},
-{
-  id: 51,
-  title: "Financial Literacy and Its Impact on Small Business Sustainability",
-  authors: "A. Lusardi, O. S. Mitchell",
-  year: 2014,
-  type: "Quantitative",
-  field: "Business",
-  strand: "ABM",
-  abstractShort:
-    "This study examines how financial literacy affects small business sustainability.",
-  abstractFull:
-    "This quantitative study examines the relationship between financial literacy and the long-term sustainability of small businesses. Findings indicate that entrepreneurs with higher financial literacy demonstrate stronger budgeting, investment planning, and risk management practices, leading to improved business survival rates.",
-  pdf: "https://files.eric.ed.gov/fulltext/EJ1024891.pdf",
-  link: "https://eric.ed.gov/?id=EJ1024891"
-},
-{
-  id: 52,
-  title: "The Relationship Between Accounting Information Systems and Organizational Performance",
-  authors: "H. Grande, R. Estébanez",
-  year: 2011,
-  type: "Quantitative",
-  field: "Accounting",
-  strand: "ABM",
-  abstractShort:
-    "This study investigates accounting information systems and firm performance.",
-  abstractFull:
-    "This quantitative study investigates how accounting information systems influence organizational performance. Results show that effective implementation of accounting systems enhances decision-making efficiency, financial reporting accuracy, and competitive advantage.",
-  pdf: "https://core.ac.uk/download/pdf/301356812.pdf",
-  link: "https://core.ac.uk/works/301356812"
-},
-{
-  id: 53,
-  title: "Entrepreneurial Intentions Among Senior High School Students",
-  authors: "F. Liñán, Y. Chen",
-  year: 2009,
-  type: "Quantitative",
-  field: "Business",
-  strand: "ABM",
-  abstractShort:
-    "This study explores entrepreneurial intentions among students.",
-  abstractFull:
-    "This quantitative study examines factors influencing entrepreneurial intentions among senior high school students. Findings highlight the role of perceived behavioral control, attitude toward entrepreneurship, and subjective norms in shaping students’ intentions to start businesses.",
-  pdf: "https://core.ac.uk/download/pdf/82093321.pdf",
-  link: "https://core.ac.uk/works/82093321"
-},
-{
-  id: 54,
-  title: "Strategic Management Practices and Business Growth in SMEs",
-  authors: "J. A. Pearce, R. B. Robinson",
-  year: 2013,
-  type: "Qualitative",
-  field: "Management",
-  strand: "ABM",
-  abstractShort:
-    "This study examines strategic management practices in SMEs.",
-  abstractFull:
-    "This qualitative study explores strategic management practices among small and medium enterprises (SMEs). Findings indicate that structured planning, competitive analysis, and leadership alignment significantly contribute to sustainable business growth.",
-  pdf: "https://core.ac.uk/download/pdf/234675432.pdf",
-  link: "https://core.ac.uk/works/234675432"
-},
-{
-  id: 55,
-  title: "Consumer Behavior and Online Purchasing Decisions",
-  authors: "M. N. Hajli",
-  year: 2015,
-  type: "Quantitative",
-  field: "Business",
-  strand: "ABM",
-  abstractShort:
-    "This study examines consumer behavior in online purchasing.",
-  abstractFull:
-    "This quantitative study examines factors influencing consumer behavior in online purchasing environments. Results highlight the impact of trust, perceived value, social influence, and digital marketing strategies on purchasing decisions.",
-  pdf: "https://core.ac.uk/download/pdf/301370876.pdf",
-  link: "https://core.ac.uk/works/301370876"
-},
-{
-  id: 56,
-  title: "Corporate Governance and Firm Performance: Evidence from Emerging Markets",
-  authors: "A. Klapper, I. Love",
-  year: 2004,
-  type: "Quantitative",
-  field: "Management",
-  strand: "ABM",
-  abstractShort:
-    "This study examines corporate governance and firm performance.",
-  abstractFull:
-    "This quantitative study investigates the relationship between corporate governance practices and firm performance in emerging markets. Results indicate that firms with stronger governance mechanisms demonstrate higher profitability, improved investor confidence, and better market valuation.",
-  pdf: "https://core.ac.uk/download/pdf/6994836.pdf",
-  link: "https://core.ac.uk/works/6994836"
-},
-{
-  id: 57,
-  title: "Financial Management Practices and Profitability of Small Enterprises",
-  authors: "E. M. Maseko, O. Manyani",
-  year: 2011,
-  type: "Quantitative",
-  field: "Accounting",
-  strand: "ABM",
-  abstractShort:
-    "This study explores financial management practices in SMEs.",
-  abstractFull:
-    "This quantitative study examines how financial management practices affect profitability among small enterprises. Findings reveal that effective budgeting, financial reporting, and internal control systems are positively associated with improved business profitability.",
-  pdf: "https://core.ac.uk/download/pdf/234643557.pdf",
-  link: "https://core.ac.uk/works/234643557"
-},
-{
-  id: 58,
-  title: "Digital Marketing Strategies and Consumer Engagement",
-  authors: "D. Chaffey, F. Ellis-Chadwick",
-  year: 2019,
-  type: "Qualitative",
-  field: "Business",
-  strand: "ABM",
-  abstractShort:
-    "This study examines digital marketing strategies and engagement.",
-  abstractFull:
-    "This qualitative study explores how digital marketing strategies influence consumer engagement and brand loyalty. Findings emphasize the importance of social media presence, targeted advertising, and data-driven marketing in enhancing customer interaction and retention.",
-  pdf: "https://core.ac.uk/download/pdf/301357401.pdf",
-  link: "https://core.ac.uk/works/301357401"
-},
-{
-  id: 59,
-  title: "Economic Factors Influencing Entrepreneurial Growth",
-  authors: "W. Naudé",
-  year: 2010,
-  type: "Quantitative",
-  field: "Economics",
-  strand: "ABM",
-  abstractShort:
-    "This study analyzes economic factors affecting entrepreneurship.",
-  abstractFull:
-    "This quantitative study analyzes macroeconomic and institutional factors influencing entrepreneurial growth. Results indicate that access to finance, regulatory environment, and human capital development significantly impact new venture success rates.",
-  pdf: "https://core.ac.uk/download/pdf/6347195.pdf",
-  link: "https://core.ac.uk/works/6347195"
-},
-{
-  id: 60,
-  title: "The Impact of Budgeting Practices on Organizational Performance",
-  authors: "M. Uyar, F. Bilgin",
-  year: 2011,
-  type: "Quantitative",
-  field: "Accounting",
-  strand: "ABM",
-  abstractShort:
-    "This study examines budgeting practices and performance outcomes.",
-  abstractFull:
-    "This quantitative study examines the impact of formal budgeting practices on organizational performance. Findings show that systematic budgeting processes enhance financial control, strategic alignment, and operational efficiency.",
-  pdf: "https://core.ac.uk/download/pdf/301370845.pdf",
-  link: "https://core.ac.uk/works/301370845"
+id: 15,
+category: "Capstone",
+title: "POUR-O-SOL: Solar Powered and Filtering Umbrella-Tent for Outdoor Comfort",
+authors: "Althea Margareth B. Angcanan, Jan Alberta A. Bayot, Dean Larize C. Benter, Ava Marie A. Padua, Sean Yuan A. Patalay, Esther Marie A. Toledo",
+gradeLevel: "12",
+strand: "STEM",
+year: 2024,
+apaCitation: "Angcanan, A. M. B., Bayot, J. A. A., Benter, D. L. C., Padua, A. M. A., Patalay, S. Y. A., & Toledo, E. M. A. (2024). Pour-o-sol: Solar powered and filtering umbrella-tent for outdoor comfort. RC-JHS Library.",
+field: "Technology",
+controlNumber: "TSHS 0013",
+location: "RC-JHS Library",
+abstract: "Since there are only two seasons in the Philippines—the dry season and the rainy season—sunlight and rainfall are abundant throughout the nation. But the two seasons have been getting harsher over time due to climate change. While excessive amounts of sunlight and rain might have positive effects on the environment, people's health should be protected from them both. With these alarming effects of climate change, the proponents developed a product called, Pour-o-Sol to shield people from the sun and rain. It is designed to resemble an umbrella, which can be opened to give the user more protection. It also has a water filter that can purify rainwater and make it safe to drink when necessary. Hence, to assess the product's performance and efficacy, the researchers tested and collected all the information required. Consequently, the researchers conducted tests and gathered all the necessary data to evaluate the product's effectiveness and performance. The findings, when combined with the spray test, wind resistance, microbiological examination, solar energy conservation, and survey with the user's experience, showed that Pour-O-Sol's many uses make it practical to use outdoors.",
+keywords: ["Sunlight", "Rainwater", "Solar energy", "Climate change", "Wind resistance"],
+resources: [],
+pdf: null
 }
 
 ];
+
+/* =====================================================
+DYNAMIC RELATED STUDIES GENERATION
+===================================================== */
+sampleStudies.forEach(study => {
+  const related = sampleStudies
+    .filter(s => s.id !== study.id)
+    .map(s => {
+      let score = 0;
+      if (s.strand === study.strand) score += 2;
+      if (s.category === study.category) score += 1;
+      const overlap = s.keywords.filter(k => study.keywords.includes(k)).length;
+      score += overlap;
+      return { study: s, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map(r => r.study);
+
+  study.relatedStudies = related;
+});
 
 export default sampleStudies;

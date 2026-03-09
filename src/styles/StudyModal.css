@@ -9,15 +9,15 @@
 }
 
 .modal-container {
-  width: 90%;
-  max-width: 720px;
+  width: 95%;
+  max-width: 1000px;
   max-height: 85vh;
   background: #ffffff;
   border-radius: 12px;
   padding: 24px;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .modal-header {
@@ -46,6 +46,42 @@
   color: #6b7280;
   margin: 12px 0;
   flex-wrap: wrap;
+}
+
+.meta-authors{
+  font-size:14px;
+  color:#374151;
+}
+
+.meta-info{
+  display:flex;
+  gap:10px;
+  font-size:13px;
+  color:#6b7280;
+}
+
+.modal-study-actions{
+  display:flex;
+  gap:14px;
+  margin-top:12px;
+  margin-bottom:16px;
+  flex-wrap:wrap;
+}
+
+.icon-action{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  font-size:13px;
+  color:#374151;
+}
+
+.icon-action svg{
+  width:16px;
+  height:16px;
 }
 
 .modal-abstract h4 {
@@ -83,6 +119,78 @@
   cursor: pointer;
 }
 
+/* StudyModal.css */
+
+.abstract-search {
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #333;
+}
+
+.highlight {
+  background-color: #5b8cf5;
+  color: #fff;
+  padding: 0 1px;
+  border-radius: 2px;
+}
+
+.modal-body{
+  display:flex;
+  gap:20px;
+  margin-top:10px;
+}
+
+/* LEFT PANEL */
+.search-panel{
+  width:300px;
+  border-right:1px solid #eee;
+  padding-right:12px;
+  display:flex;
+  flex-direction:column;
+}
+
+.search-results{
+  margin-top:10px;
+  max-height:300px;
+  overflow-y:auto;
+  font-size:13px;
+}
+
+.result-item{
+  padding:6px;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.result-item:hover{
+  background:#f3f4f6;
+}
+
+.no-results{
+  font-size:12px;
+  color:#888;
+}
+
+/* RIGHT PANEL */
+.abstract-panel{
+  flex:1;
+  overflow-y:auto;
+}
+
+.abstract-panel p{
+  font-size:14px;
+  line-height:1.7;
+}
+
+.result-item.active{
+  background:#dbeafe;
+  border-left:3px solid #2563eb;
+}
+
 @media (max-width: 900px) {
   .modal-actions {
     gap: 8px;                 /* tighter spacing */
@@ -94,6 +202,21 @@
     font-size: 13px;          /* smaller text */
     border-radius: 5px;
     min-height: 32px;         /* still tap-friendly */
+  }
+
+  .modal-container{
+    overflow-y: auto;
+  }
+
+  .modal-body{
+    flex-direction:column;
+  }
+
+  .search-panel{
+    width:100%;
+    border-right:none;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
   }
 }
 

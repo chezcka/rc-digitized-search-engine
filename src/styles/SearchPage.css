@@ -573,7 +573,7 @@ input[type="checkbox"] {
 
   .results {
     padding-bottom: 120px;
-    padding-top: 200px;
+    padding-top: 100px;
   }
 
   /* =========================
@@ -595,8 +595,12 @@ input[type="checkbox"] {
     height: 14px;
   }
 
+  .icon-action span {
+    font-size: 9px
+  }
+
   .cite-year {
-    font-size: 12px;
+    font-size: 9px;
   }
 
   /* =========================

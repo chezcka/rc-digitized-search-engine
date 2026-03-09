@@ -1,0 +1,37 @@
+.locate-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.locate-modal{
+  position: relative; /* needed for absolute close button */
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+}
+
+.locate-info p{
+  margin: 10px 0;
+}
+
+/* Close X button */
+.locate-close-x{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  line-height: 1;
+  padding: 0;
+}

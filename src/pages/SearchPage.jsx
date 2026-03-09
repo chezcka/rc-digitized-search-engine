@@ -8,6 +8,8 @@ import useBookmarks from "../hooks/useBookmarks";
 import SavedModal from "../components/SavedModal";
 import CitationModal from "../components/CitationModal";
 import StudyModal from "../components/StudyModal";
+import LocateModal from "../components/LocateModal";
+import RelatedStudiesModal from "../components/RelatedStudiesModal";
 import Profile from "../pages/Profile";
 
 import logo from "../assets/rc-logo.png";
@@ -34,6 +36,11 @@ export default function SearchPage() {
   const [citeStudy, setCiteStudy] = useState(null);
   const [activeStudy, setActiveStudy] = useState(null);
   const [showProfile, setShowProfile] = useState(false);
+
+  const [locateStudy, setLocateStudy] = useState(null);
+
+  const [currentStudy, setCurrentStudy] = useState(null);
+  const [showRelatedModal, setShowRelatedModal] = useState(false);
 
   /* =========================
      PAGINATION
@@ -109,29 +116,44 @@ export default function SearchPage() {
      ABSTRACT HELPER (ADDED)
   ========================= */
   const getAbstractPreview = (study) => {
-    return study.abstractShort || study.abstract || "";
+    return (
+      study.abstractShort ||
+      study.abstractFull ||
+      study.abstract ||
+      ""
+    );
   };
 
   const filteredStudies = studies.filter((study) => {
+    const searchText = search.toLowerCase();
+
     const matchesSearch =
-      study.title.toLowerCase().includes(search.toLowerCase()) ||
-      study.abstract?.toLowerCase().includes(search.toLowerCase()) ||
-      study.abstractShort?.toLowerCase().includes(search.toLowerCase()) ||
-      study.abstractFull?.toLowerCase().includes(search.toLowerCase());
+      study.title?.toLowerCase().includes(searchText) ||
+      study.authors?.toLowerCase().includes(searchText) ||
+      study.field?.toLowerCase().includes(searchText) ||
+      study.abstract?.toLowerCase().includes(searchText) ||
+      study.abstractShort?.toLowerCase().includes(searchText) ||
+      study.abstractFull?.toLowerCase().includes(searchText) ||
+      study.keywords?.some((k) =>
+        k.toLowerCase().includes(searchText)
+      );
 
     const matchesType =
-      typeFilter.length === 0 || typeFilter.includes(study.type);
+      typeFilter.length === 0 ||
+      typeFilter.includes(study.category || study.type);
 
     const matchesField =
       fieldFilter.length === 0 ||
-      fieldFilter.includes(study.field) ||
+      fieldFilter.some((f) =>
+        study.field?.toLowerCase().includes(f.toLowerCase())
+      ) ||
       (fieldFilter.includes("Others") &&
         otherField &&
-        study.field.toLowerCase().includes(otherField.toLowerCase()));
+        study.field?.toLowerCase().includes(otherField.toLowerCase()));
 
     const matchesYear =
-      (!yearFrom || study.year >= yearFrom) &&
-      (!yearTo || study.year <= yearTo);
+      (!yearFrom || study.year >= Number(yearFrom)) &&
+      (!yearTo || study.year <= Number(yearTo));
 
     const matchesStrand =
       strandFilter.length === 0 ||
@@ -340,7 +362,7 @@ const totalPages = Math.ceil(
               "English",
               "Technology",
               "Engineering",
-              "Medical",
+              "Medicine",
               "Business",
               "Accounting",
               "Management",
@@ -378,7 +400,7 @@ const totalPages = Math.ceil(
             )}
 
             <h4>Strand</h4>
-              {["ABM", "HUMMS", "STEM"].map((strand) => (
+              {["ABM", "HUMSS", "STEM"].map((strand) => (
                 <label key={strand}>
                   <input
                     type="checkbox"
@@ -444,7 +466,7 @@ const totalPages = Math.ceil(
               "English",
               "Technology",
               "Engineering",
-              "Medical",
+              "Medicine",
               "Business",
               "Accounting",
               "Management",
@@ -480,7 +502,7 @@ const totalPages = Math.ceil(
             )}
 
             <h4>Strand</h4>
-              {["ABM", "HUMMS", "STEM"].map((strand) => (
+              {["ABM", "HUMSS", "STEM"].map((strand) => (
                 <label key={strand}>
                   <input
                     type="checkbox"
@@ -511,7 +533,13 @@ const totalPages = Math.ceil(
             >
               <h2>{study.title}</h2>
 
-              <p className="meta">{study.authors}</p>
+              <p className="meta">
+                {study.authors}
+              </p>
+
+              <p className="meta-secondary">
+                Grade {study.gradeLevel} • {study.strand}
+              </p>
 
               <p className="abstract">{getAbstractPreview(study)}</p>
 
@@ -550,6 +578,42 @@ const totalPages = Math.ceil(
                   </svg>
                   <span>Cite</span>
                 </button>
+
+                <button
+                  className="icon-action"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setLocateStudy(study);
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      fill="#2563eb"
+                      d="M288-16c17.7 0 32 14.3 32 32l0 18.3c98.1 14 175.7 91.6 189.7 189.7l18.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-18.3 0c-14 98.1-91.6 175.7-189.7 189.7l0 18.3c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-18.3C157.9 463.7 80.3 386.1 66.3 288L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l18.3 0C80.3 125.9 157.9 48.3 256 34.3L256 16c0-17.7 14.3-32 32-32zM128 256a160 160 0 1 0 320 0 160 160 0 1 0 -320 0zm160-96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+                    />
+                  </svg>
+                  <span>Locate</span>
+                </button>
+
+                <button
+                  className="icon-action"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    // Pass the dynamically generated related studies
+                    setCurrentStudy(study);
+                    setShowRelatedModal(true);
+                  }}
+                >
+                    <svg viewBox="0 0 640 512">
+                      <path fill="#2362eb" 
+                      d="M384 512L96 512c-53 0-96-43-96-96L0 96C0 43 43 0 96 0L400 0c26.5 0 48 21.5 48 48l0 288c0 20.9-13.4 38.7-32 45.3l0 66.7c17.7 0 32 14.3 32 32s-14.3 32-32 32l-32 0zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0 0-64-256 0zm32-232c0 13.3 10.7 24 24 24l176 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-176 0c-13.3 0-24 10.7-24 24zm24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24l176 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-176 0z"
+                      />
+                    </svg>
+                    <span>Related Studies</span>
+                  </button>
 
                 <span className="cite-year">{study.year}</span>
               </div>
@@ -611,16 +675,44 @@ const totalPages = Math.ceil(
             onClose={() => setCiteStudy(null)}
           />
 
+          <LocateModal
+            open={!!locateStudy}
+            study={locateStudy}
+            onClose={() => setLocateStudy(null)}
+          />
+
+          <RelatedStudiesModal
+            open={showRelatedModal}
+            relatedStudies={currentStudy?.relatedStudies || []}
+            onClose={() => setShowRelatedModal(false)}
+            onSelectStudy={(study) => {
+              setActiveStudy(study);
+              setShowRelatedModal(false);
+            }}
+          />
+
           <StudyModal
             open={!!activeStudy}
             study={activeStudy}
             onClose={() => setActiveStudy(null)}
+
             onCite={(study) => {
               setActiveStudy(null);
               setCiteStudy(study);
             }}
+
             onToggleSave={(id) => toggleBookmark(id)}
             isSaved={(id) => bookmarks.includes(id)}
+
+            onLocate={(study) => {
+              setActiveStudy(null);
+              setLocateStudy(study);
+            }}
+
+            onShowRelated={(study) => {
+              setCurrentStudy(study);
+              setShowRelatedModal(true);
+            }}
           />
 
           <Profile
