@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 10px;
 }
 
 .related-modal {
@@ -54,4 +55,29 @@
 
 .related-item a:hover {
   color: #1d4ed8; /* darker blue for link itself */
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .related-modal {
+    width: 100%;        /* take full width of the screen */
+    padding: 20px;      /* reduce padding for smaller screens */
+    max-height: 90vh;   /* taller modal for mobile scrolling */
+    border-radius: 8px;
+  }
+
+  .related-close-x {
+    font-size: 22px;    /* slightly smaller close button */
+    top: 8px;
+    right: 8px;
+  }
+
+  .related-item {
+    font-size: 14px;    /* smaller text for mobile */
+  }
+
+  .related-item a {
+    font-size: 14px;
+  }
 }
