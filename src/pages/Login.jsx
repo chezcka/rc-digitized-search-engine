@@ -54,7 +54,7 @@ export default function Login() {
       <div className="auth-box">
         <img src={logo} alt="RC Logo" className="auth-logo" />
 
-        <h2 className="auth-title">RC DIGITIZED SEARCH ENGINE</h2>
+        <h2 className="auth-title">RCGate</h2>
 
         {error && <div className="error">{error}</div>}
 
